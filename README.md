@@ -51,7 +51,7 @@ To start running your first program, you just need a few things first.
 
 3. Then you will compile and run the code by following the steps below.
 
-[Download](https://github.com/jorexdeveloper "Latest BS compiler.") the compiler.
+[Download](https://raw.githubusercontent.com/jorexdeveloper/bs-lang/refs/heads/main/bin/bs "Latest BS compiler.") the compiler.
 
 Switch to the compiler directory and make it executable.
 
