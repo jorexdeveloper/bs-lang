@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//#define MEMORY_UNIT char
+// #define MEMORY_UNIT char
 #define MEMORY_UNIT unsigned short int
 
 #define INITIAL_MEMORY 1024 * sizeof(MEMORY_UNIT)

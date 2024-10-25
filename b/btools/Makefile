@@ -1,5 +1,5 @@
 CC=gcc
-STRIP=strip --strip-all 
+STRIP=strip --strip-all
 CFLAGS=-O2
 
 all: bf bf16 bfstrip
@@ -18,4 +18,3 @@ bfstrip: bfstrip.c
 
 clean:
 	-rm bf bf16 bfstrip
-

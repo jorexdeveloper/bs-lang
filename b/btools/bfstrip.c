@@ -30,7 +30,7 @@ long count;
 long newline_count;
 
 void ask_newline() {
-	if (++newline_count == 72) {
+	if (++newline_count == 80) {
 		fputc('\n', stdout);
 		newline_count = 0;
 	}
