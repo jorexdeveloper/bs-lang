@@ -1,7 +1,7 @@
 #!bf
 
 # Name      : tictactoe
-# Purpose   : Tic Tac Toe game.
+# Purpose   : Tic Tac Toe game
 # Author    : unknown
 
 <++++++++++.++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

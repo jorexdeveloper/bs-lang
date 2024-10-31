@@ -1,6 +1,6 @@
 #!/usr/bin/bf
 
-# Name      : Bfg
+# Name      : cellsize
 # Author    : brainfuck esolang
 # Purpose   : Print cell size used by compiler/interpreter
 

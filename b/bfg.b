@@ -1,6 +1,6 @@
 #!/usr/bin/bf
 
-# Name      : Bfg
+# Name      : bfg
 # Author    : Jore
 # Purpose   : Output brainfuck code that prints the input
 

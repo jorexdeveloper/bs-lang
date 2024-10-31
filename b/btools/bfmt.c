@@ -1,6 +1,6 @@
 /*
- *	 bfmt.c
- *	 brainfuck code formatter/prettifier.
+ *	 bfmt
+ *	 A brainfuck code formatter/prettifier.
  *
  *	 Copyright (C) 2024  Jore <https://github.com/jorexdeveloper>
  *
@@ -18,11 +18,12 @@
  *	 along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
 
-#define MAX_LINE 25 /* Max chars before new line. */
-#define MAX_CHAR 5	/* Max chars before whitespace. */
+#define MAX_CHAR 50
+#define MAX_LINE 25
 
 bool ischar(int);
 void indent(int);
@@ -31,41 +32,42 @@ int main(void) {
 	register int c, b, l, i;
 	c = b = l = i = 0;
 	while ((c = getchar()) != EOF) {
-		switch (c) {
-			case '+':
-			case '-':
-			case ',':
-			case '.':
-			case '<':
-			case '>':
-				i++;
-				if (!ischar(b)) {
-					indent(l);
-				} else if (c != b || (i % MAX_LINE) == 0) {
-					putchar('\n');
-					indent(l);
-					i = 0;
-				} else if (i > 1 && ((i - 1) % MAX_CHAR) == 0)
-					putchar(' ');
-				putchar(c);
-				b = c;
+		if (ischar(c)) {
+			if (!ischar(b)) {
+				indent(l);
+			} else if (c != b || (i > 0 && (i % MAX_LINE) == 0)) {
+				putchar('\n');
+				indent(l);
+				i = 0;
+			} else if (i > 1 && (i % MAX_CHAR) == 0)
+				putchar(' ');
+			putchar(c);
+			b = c;
+			i++;
+			continue;
+		} else if (c == '[') {
+			l++;
+		} else if (c == ']') {
+			l--;
+		} else if (isspace(c)) {
+			if (ischar(b))
 				continue;
-			case '[':
-				l++;
-				break;
-			case ']':
-				l--;
-				break;
-			case '\n':
-				if (ischar(b) || b == '[' || b == ']') {
-					i = 0;
-					continue;
-				}
-			default:
+			else if (b == '[' || b == ']') {
+				i = 0;
+				continue;
+			} else if (c == b && c != '\n')
+				continue;
+			else {
 				putchar(c);
 				i = 0;
 				b = c;
 				continue;
+			}
+		} else {
+			putchar(c);
+			i = 0;
+			b = c;
+			continue;
 		}
 		putchar('\n');
 		if (l > 0)
@@ -77,19 +79,13 @@ int main(void) {
 	}
 }
 
-/*
- * Returns true if 'c' is a brainfuck non-loop char.
- */
-bool ischar(int c) {
-	return (c == '+' || c == '-' || c == ',' || c == '.' || c == '<' || c == '>');
+bool ischar(int x) {
+	return (x == '+' || x == '-' || x == ',' || x == '.' || x == '<' || x == '>');
 }
 
-/*
- * Print tabs equal to 'i'.
- */
-void indent(register int i) {
-	while (i > 0) {
+void indent(int y) {
+	while (y > 0) {
 		putchar('\t');
-		i--;
+		y--;
 	}
 }

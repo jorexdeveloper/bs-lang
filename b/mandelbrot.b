@@ -1,5 +1,9 @@
 #!bf
-      A mandelbrot set fractal viewer in brainf*** written by Erik Bosman
+
+# Name      : mandelbrot
+# Author    : Erik Bosman
+# Purpose   : A mandelbrot set fractal viewer
+
 +++++++++++++[->++>>>+++++>++>+<<<<<<]>>>>>++++++>--->>>>>>>>>>+++++++++++++++[[
 >>>>>>>>>]+[<<<<<<<<<]>>>>>>>>>-]+[>>>>>>>>[-]>]<<<<<<<<<[<<<<<<<<<]>>>>>>>>[-]+
 <<<<<<<+++++[-[->>>>>>>>>+<<<<<<<<<]>>>>>>>>>]>>>>>>>+>>>>>>>>>>>>>>>>>>>>>>>>>>

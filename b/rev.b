@@ -1,7 +1,7 @@
 #!bf
 
 # Name      : rev
-# Purpose   : Output newline terminated input in reverse.
+# Purpose   : Output newline terminated input in reverse
 # Author    : Jore
 
 >++++[>++>++++++++>++++++++++>++++++++++>++++++++++>+++++++++++++++<<<<<<-]>++>>
