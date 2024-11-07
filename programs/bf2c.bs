@@ -1,0 +1,1220 @@
+#!/usr/bin/env bs
+
+# Name      : bf2c
+# Author    : Katie ball
+# Purpose   : The brainfuck to C interpretor
+
+r 1
+m +5
+l:
+	r 1
+	m +7
+	l 1
+	m -1
+:l
+r 1
+o 1
+l 2
+m +2
+l:
+	r 1
+	m +5
+	l:
+		r 1
+		m +7
+		l 1
+		m -1
+	:l
+	l 1
+	m -1
+:l
+r 2
+o 1
+m +5
+o 1
+l 1
+m +2
+l:
+	r 1
+	m -5
+	l 1
+	m -1
+:l
+r 1
+m -1
+o 1
+l 1
+m +2
+l:
+	r 1
+	m +4
+	l 1
+	m -1
+:l
+r 1
+m +1
+o 1
+l 1
+m +2
+l:
+	r 1
+	m +4
+	l 1
+	m -1
+:l
+r 1
+m +1
+o 1
+l:
+	r 1
+	m +1
+	r 1
+	m +1
+	r 1
+	m +1
+	l 3
+	m -1
+:l
+r 3
+l:
+	l 3
+	m +1
+	r 3
+	m -1
+:l
+l 5
+m +2
+l:
+	r 1
+	m +3
+	l:
+		r 1
+		m -3
+		l 1
+		m -1
+	:l
+	l 1
+	m -1
+:l
+r 2
+m +1
+o 1
+m +1
+o 1
+l 1
+m +7
+l:
+	r 1
+	m -10
+	l 1
+	m -1
+:l
+r 1
+m +1
+o 1
+l 1
+m +4
+l:
+	r 1
+	m +7
+	l 1
+	m -1
+:l
+r 1
+o 1
+r 1
+o 1
+m -7
+o 1
+m -5
+o 1
+l 2
+m +2
+l:
+	r 2
+	m +5
+	l 2
+	m -1
+:l
+r 2
+o 1
+m +1
+o 1
+m -16
+o 1
+l 2
+m +2
+l:
+	r 1
+	m -7
+	l 1
+	m -1
+:l
+r 1
+o 1
+r 1
+m +4
+o 1
+l 2
+m +2
+l:
+	r 1
+	m +8
+	l 1
+	m -1
+:l
+r 1
+o 1
+l 1
+m +10
+l:
+	r 3
+	m -11
+	l 3
+	m -1
+:l
+r 3
+m +3
+o 1
+l 1
+m -5
+o 1
+m +5
+o 1
+m -7
+o 1
+l 2
+m +2
+l:
+	r 2
+	m +8
+	l 2
+	m -1
+:l
+r 2
+m +1
+o 1
+l 2
+m +3
+l:
+	r 1
+	m -10
+	l 1
+	m -1
+:l
+r 1
+o 1
+l 1
+m +2
+l:
+	r 2
+	m -8
+	l 2
+	m -1
+:l
+r 2
+m -1
+o 1
+m -6
+o 1
+l 2
+m +2
+l:
+	r 1
+	m +8
+	l 1
+	m -1
+:l
+r 1
+m +3
+o 1
+m -3
+o 4
+r 1
+m +2
+o 1
+l 1
+m -4
+o 1
+m -2
+o 1
+l 1
+m +2
+l:
+	r 2
+	m +9
+	l 2
+	m -1
+:l
+r 2
+m +1
+o 1
+l 2
+m +2
+l:
+	r 1
+	m +9
+	l 1
+	m -1
+:l
+r 1
+m +1
+o 1
+l 1
+m +2
+l:
+	r 2
+	m -7
+	l 2
+	m -1
+:l
+r 2
+m -1
+o 1
+l 1
+m -2
+o 1
+r 2
+o 1
+l 3
+m +3
+l:
+	r 2
+	m +4
+	l 2
+	m -1
+:l
+r 2
+o 1
+l 2
+m +3
+l:
+	r 2
+	m -4
+	l 2
+	m -1
+:l
+r 2
+o 1
+m +8
+o 1
+m +5
+o 1
+l 2
+m +2
+l:
+	r 1
+	m -9
+	l 1
+	m -1
+:l
+r 1
+m -1
+o 1
+m +1
+o 1
+r 2
+o 1
+l 3
+m +2
+l:
+	r 2
+	m +7
+	l 2
+	m -1
+:l
+r 2
+m -1
+o 1
+r 1
+o 1
+r 3
+l:
+	m -1
+:l
+r 2
+l:
+	m -1
+:l
+l 1
+m +1
+l:
+	l 2
+	l:
+		m -1
+	:l
+	i 1
+	l:
+		r 13
+		m +1
+		r 1
+		m +1
+		l 14
+		m -1
+	:l
+	r 14
+	l:
+		l 14
+		m +1
+		r 14
+		m -1
+	:l
+	l 2
+	m +1
+	r 1
+	l:
+		m -1
+		l:
+			m -1
+			l:
+				m -1
+				l:
+					m -1
+					l:
+						m -1
+						l:
+							m -1
+							l:
+								m -1
+								l:
+									m -1
+									l:
+										m -1
+										l:
+											m -1
+											l:
+												m -1
+												l:
+													m -1
+													l:
+														m -1
+														l:
+															m -1
+															l:
+																m -1
+																l:
+																	m -1
+																	l:
+																		m -1
+																		l:
+																			m -1
+																			l:
+																				m -1
+																				l:
+																					m -1
+																					l:
+																						m -1
+																						l:
+																							m -1
+																							l:
+																								m -1
+																								l:
+																									m -1
+																									l:
+																										m -1
+																										l:
+																											m -1
+																											l:
+																												m -1
+																												l:
+																													m -1
+																													l:
+																														m -1
+																														l:
+																															m -1
+																															l:
+																																m -1
+																																l:
+																																	m -1
+																																	l:
+																																		m -1
+																																		l:
+																																			m -1
+																																			l:
+																																				m -1
+																																				l:
+																																					m -1
+																																					l:
+																																						m -1
+																																						l:
+																																							m -1
+																																							l:
+																																								m -1
+																																								l:
+																																									m -1
+																																									l:
+																																										m -1
+																																										l:
+																																											m -1
+																																											l:
+																																												l 1
+																																												m -1
+																																												r 1
+																																												l:
+																																													m -1
+																																												:l
+
+																																											:l
+
+																																										:l
+
+																																									:l
+
+																																								:l
+
+																																							:l
+
+																																						:l
+
+																																					:l
+
+																																				:l
+
+																																			:l
+
+																																		:l
+
+																																	:l
+
+																																:l
+
+																															:l
+
+																														:l
+
+																													:l
+
+																												:l
+
+																											:l
+
+																										:l
+
+																									:l
+
+																								:l
+
+																							:l
+
+																						:l
+
+																					:l
+
+																				:l
+
+																			:l
+
+																		:l
+
+																	:l
+
+																:l
+
+															:l
+
+														:l
+
+													:l
+
+												:l
+
+											:l
+
+										:l
+
+									:l
+
+								:l
+
+							:l
+
+						:l
+
+					:l
+
+				:l
+
+			:l
+
+		:l
+
+	:l
+	l 1
+	l:
+		l 12
+		l:
+			m -1
+		:l
+		r 12
+		l:
+			m -1
+		:l
+
+	:l
+	l 12
+	l:
+		l 1
+		m +5
+		l:
+			r 1
+			m -9
+			l 1
+			m -1
+		:l
+		r 1
+		m +2
+		l:
+			r 1
+		:l
+		r 2
+		l:
+			r 1
+			m +5
+			l:
+				r 1
+				m +9
+				l 1
+				m -1
+			:l
+			r 1
+			m -2
+			o 2
+			m -1
+			o 1
+			l 1
+			m +7
+			l:
+				r 1
+				m +10
+				l 1
+				m -1
+			:l
+			r 1
+			o 1
+			l 1
+			m +11
+			l:
+				r 1
+				m -5
+				l 1
+				m -1
+			:l
+			r 1
+			m +2
+			o 1
+			l 6
+			o 1
+			r 6
+			l:
+				m -1
+			:l
+			l 1
+		:l
+		l 3
+		l:
+			m -1
+			l:
+				r 1
+			:l
+			r 2
+			l:
+				r 1
+				m +6
+				l:
+					r 1
+					m +3
+					l:
+						r 1
+						m +6
+						l 1
+						m -1
+					:l
+					l 1
+					m -1
+				:l
+				r 2
+				m +6
+				o 1
+				m -13
+				o 1
+				m -4
+				o 1
+				m +3
+				o 1
+				l 1
+				m +6
+				l:
+					r 1
+					m -10
+					l 1
+					m -1
+				:l
+				r 1
+				o 1
+				m +8
+				o 1
+				m -4
+				o 1
+				l 1
+				m +4
+				l:
+					r 1
+					m +17
+					l 1
+					m -1
+				:l
+				r 1
+				o 1
+				l 1
+				m +4
+				l:
+					r 1
+					m -17
+					l 1
+					m -1
+				:l
+				r 1
+				o 1
+				m +5
+				o 1
+				m -8
+				o 1
+				l 1
+				m +2
+				l:
+					r 1
+					m +9
+					l 1
+					m -1
+				:l
+				r 1
+				o 1
+				l:
+					m -1
+				:l
+				l 7
+				o 1
+				r 5
+			:l
+			l 3
+			l:
+				m -1
+				l:
+					r 1
+				:l
+				r 2
+				l:
+					r 1
+					m +5
+					l:
+						r 1
+						m +9
+						l 1
+						m -1
+					:l
+					r 1
+					o 2
+					m -3
+					o 1
+					l 1
+					m +7
+					l:
+						r 1
+						m +10
+						l 1
+						m -1
+					:l
+					r 1
+					o 1
+					l 1
+					m +11
+					l:
+						r 1
+						m -5
+						l 1
+						m -1
+					:l
+					r 1
+					m +2
+					o 1
+					l 6
+					o 1
+					r 6
+					l:
+						m -1
+					:l
+					l 1
+				:l
+				l 3
+				l:
+					m -1
+					l:
+						r 1
+					:l
+					r 2
+					l:
+						r 1
+						m +3
+						l:
+							r 1
+							m +4
+							l:
+								r 1
+								m +10
+								l 1
+								m -1
+							:l
+							l 1
+							m -1
+						:l
+						r 2
+						m -1
+						o 1
+						m -5
+						o 1
+						m -9
+						o 1
+						l 1
+						m +2
+						l:
+							r 1
+							m +6
+							l 1
+							m -1
+						:l
+						r 1
+						m -1
+						o 1
+						l 1
+						m +3
+						l:
+							r 1
+							m -5
+							l 1
+							m -1
+						:l
+						r 1
+						o 1
+						l 1
+						m +6
+						l:
+							r 1
+							m -10
+							l 1
+							m -1
+						:l
+						r 1
+						m -1
+						o 1
+						l 1
+						m +3
+						l:
+							r 1
+							m +3
+							l 1
+							m -1
+						:l
+						r 1
+						o 1
+						m -5
+						o 1
+						l 1
+						m +4
+						l:
+							r 1
+							m +17
+							l 1
+							m -1
+						:l
+						r 1
+						o 1
+						l 1
+						m +4
+						l:
+							r 1
+							m -17
+							l 1
+							m -1
+						:l
+						r 1
+						o 1
+						m +5
+						o 1
+						m -8
+						o 1
+						l 1
+						m +2
+						l:
+							r 1
+							m +9
+							l 1
+							m -1
+						:l
+						r 1
+						o 1
+						l:
+							m -1
+						:l
+						l 7
+						o 1
+						r 5
+					:l
+					l 3
+					l:
+						l 1
+						m +3
+						l:
+							r 1
+							m -5
+							l 1
+							m -1
+						:l
+						r 1
+						m +1
+						l:
+							r 1
+						:l
+						r 2
+						l:
+							r 1
+							m +5
+							l:
+								r 1
+								m +9
+								l 1
+								m -1
+							:l
+							r 1
+							o 2
+							l 1
+							m +7
+							l:
+								r 1
+								m +10
+								l 1
+								m -1
+							:l
+							r 1
+							m -3
+							o 1
+							l 1
+							m +5
+							l:
+								r 1
+								m -10
+								l 1
+								m -1
+							:l
+							r 1
+							m -3
+							o 1
+							l 6
+							o 1
+							r 6
+							l:
+								m -1
+							:l
+							l 1
+						:l
+						l 3
+						l:
+							m -2
+							l:
+								r 1
+							:l
+							r 2
+							l:
+								r 1
+								m +5
+								l:
+									r 1
+									m +9
+									l 1
+									m -1
+								:l
+								r 1
+								m -2
+								o 2
+								l 1
+								m +7
+								l:
+									r 1
+									m +10
+									l 1
+									m -1
+								:l
+								r 1
+								m -1
+								o 1
+								l 1
+								m +5
+								l:
+									r 1
+									m -10
+									l 1
+									m -1
+								:l
+								r 1
+								m -3
+								o 1
+								l:
+									m -1
+								:l
+								l 6
+								o 1
+								r 5
+							:l
+							l 3
+							l:
+								l 1
+								m +3
+								l:
+									r 1
+									m -10
+									l 1
+									m -1
+								:l
+								r 1
+								m +1
+								l:
+									r 1
+								:l
+								r 2
+								l:
+									r 1
+									m +3
+									l:
+										r 1
+										m +4
+										l:
+											r 1
+											m +10
+											l 1
+											m -1
+										:l
+										l 1
+										m -1
+									:l
+									r 2
+									m -1
+									o 1
+									l 1
+									m +3
+									l:
+										r 1
+										m -5
+										l 1
+										m -1
+									:l
+									r 1
+									o 1
+									m +1
+									o 1
+									m +3
+									o 1
+									m -7
+									o 1
+									l 1
+									m +6
+									l:
+										r 1
+										m -10
+										l 1
+										m -1
+									:l
+									r 1
+									m -1
+									o 1
+									m +2
+									o 1
+									l 1
+									m +7
+									l:
+										r 1
+										m +10
+										l 1
+										m -1
+									:l
+									r 1
+									o 1
+									l 1
+									m +7
+									l:
+										r 1
+										m -10
+										l 1
+										m -1
+									:l
+									r 1
+									m -1
+									o 1
+									l 1
+									m +8
+									l:
+										r 1
+										m +10
+										l 1
+										m -1
+									:l
+									r 1
+									m +2
+									o 1
+									l:
+										m -1
+									:l
+									l 7
+									o 1
+									r 5
+								:l
+								l 3
+								l:
+									m -2
+									l:
+										r 1
+									:l
+									r 2
+									l:
+										r 1
+										m +5
+										l:
+											r 1
+											m +5
+											l:
+												r 1
+												m +5
+												l 1
+												m -1
+											:l
+											l 1
+											m -1
+										:l
+										r 2
+										o 1
+										l:
+											m -1
+										:l
+										l 7
+										o 1
+										r 5
+									:l
+									l 3
+									l:
+										l 1
+										m +10
+										l:
+											r 1
+											m -16
+											l 1
+											m -1
+										:l
+										r 1
+										m -2
+										l:
+											r 1
+										:l
+										r 2
+										l:
+											l 4
+											l:
+												m -1
+											:l
+
+										:l
+
+									:l
+
+								:l
+
+							:l
+
+						:l
+
+					:l
+
+				:l
+
+			:l
+
+		:l
+
+	:l
+	r 2
+:l
+l 1
+m +2
+l:
+	r 1
+	m +5
+	l:
+		r 1
+		m +10
+		l 1
+		m -1
+	:l
+	l 1
+	m -1
+:l
+r 2
+m +1
+o 1
+l 1
+m +3
+l:
+	r 1
+	m +6
+	l 1
+	m -1
+:l
+r 1
+m +1
+o 1
+l 1
+m +3
+l:
+	r 1
+	m -5
+	l 1
+	m -1
+:l
+r 1
+o 1
+m +11
+o 1
+l 1
+m +7
+l:
+	r 1
+	m -10
+	l 1
+	m -1
+:l
+r 1
+m -6
+o 1
+m +8
+o 1
+m -7
+o 1
+l 1
+m +3
+l:
+	r 1
+	m +6
+	l 1
+	m -1
+:l
+r 1
+o 1
+l 1
+m +6
+l:
+	r 1
+	m +11
+	l 1
+	m -1
+:l
+r 1
+o 1
+l 1
+m +10
+o 1

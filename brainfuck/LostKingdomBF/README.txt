@@ -1,18 +1,18 @@
 The Lost Kingdom
 (C) Jon Ripley 2004, 2005
-BrainFuck Edition v0.11
+brainfuck Edition v0.11
 
-Lost Kingdom is a conversion into Brainfuck of my game 'Lost Kingdom'
+Lost Kingdom is a conversion into brainfuck of my game 'Lost Kingdom'
 which won the First Annual Classic 2k Text Adventure Competition in 2004.
 The original game was written in highly optimised BBC BASIC and was only
-2.74Kb in size; this Brainfuck edition is significantly larger at 2.08Mb.
+2.74Kb in size; this brainfuck edition is significantly larger at 2.08Mb.
 
 The original game was available for RISC OS, Windows and Acorn 8-bit
-computers. This Brainfuck edition should run on any computer with a
-suitable Brainfuck interpreter or compiler.
+computers. This brainfuck edition should run on any computer with a
+suitable brainfuck interpreter or compiler.
 
-I have tried to make this conversion into Brainfuck as true as possible to
-the original in game play. The solution to this Brainfuck version is
+I have tried to make this conversion into brainfuck as true as possible to
+the original in game play. The solution to this brainfuck version is
 slightly different than the original. The room descriptions and some of the
 messages have been changed, and a few new features have been added, as I am
 no longer working within a 2.8Kb size limit.
@@ -23,10 +23,10 @@ description version has been specially enhanced and is in essence a seperate
 game. The solutions are different between the two versions.
 
 This game is probably the first piece of true interactive fiction that has
-ever been written in Brainfuck. This game is probably the largest program ever
-written in Brainfuck.
+ever been written in brainfuck. This game is probably the largest program ever
+written in brainfuck.
 
-In order to play Lost Kingdom you will need a Brainfuck interpreter, the
+In order to play Lost Kingdom you will need a brainfuck interpreter, the
 source code for a highly portable optimising interpreter is included in the
 bftools directory. The interpreter 'bf' has been confirmed to work on RISC OS,
 Windows, DOS, Linux, Solaris and Mac OS X. It should work on most systems. You
@@ -44,7 +44,7 @@ information on how to play.
 
 The parser is somewhat limited but very functional. A better parser may be
 implemented in the distant future, perhaps in a future project, this was not
-planned for the first release as coding a decent parser in Brainfuck is
+planned for the first release as coding a decent parser in brainfuck is
 non-trivial.
 
 If you write a review of this game I would appreciate it very much if you

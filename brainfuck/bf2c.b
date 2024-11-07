@@ -1,16 +1,14 @@
-#!bf
+#!/usr/bin/env bf
 
-/* bf2c
-* The Brainfuck to C interpretor
-* Katie ball
-*
-* NOTE: This was rushed and currently
-* it does not take well to any characters of input besides
-* the 8 standard brainfuck operators and newline and EOF
-* So consequently it will only interpret uncommented code
-* Check my web site for a later release
-* that will probably have support for commented code
-*/
+# Name      : bf2c
+# Author    : Katie ball
+# Purpose   : The brainfuck to C interpretor
+#
+# NOTE: This was rushed and currently it does not take well to any characters of
+#       input besides the 8 standard brainfuck operators and newline and EOF
+#       So consequently it will only interpret uncommented code
+#       Check my web site for a later release that will probably have support
+#       for commented code
 
 >+++++[>+++++++<-]>.<<++[>+++++[>+++++++<-]<-]>>.+++++.<++[>-----<-]>-.<++[>++++
 <-]>+.<++[>++++<-]>+.[>+>+>+<<<-]>>>[<<<+>>>-]<<<<<++[>+++[>---<-]<-]>>+.+.<++++

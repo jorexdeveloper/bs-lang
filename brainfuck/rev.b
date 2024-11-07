@@ -1,8 +1,8 @@
-#!bf
+#!/usr/bin/env bf
 
 # Name      : rev
-# Purpose   : Output newline terminated input in reverse
 # Author    : Jore
+# Purpose   : Output newline terminated input in reverse
 
 >++++[>++>++++++++>++++++++++>++++++++++>++++++++++>+++++++++++++++<<<<<<-]>++>>
 +++>+++++>++++++>++>++++++++++[>+++++++++++>++++++++++>++++++++++++>+++++++++++<

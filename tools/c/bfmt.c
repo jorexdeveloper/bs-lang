@@ -1,6 +1,6 @@
 /*
  *	 bfmt
- *	 A brainfuck code formatter/prettifier.
+ *	 Formats brainfuck code.
  *
  *	 Copyright (C) 2024  Jore <https://github.com/jorexdeveloper>
  *
@@ -22,7 +22,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define MAX_CHAR 50
+#define MAX_CHAR 5
 #define MAX_LINE 25
 
 bool ischar(int);

@@ -1,0 +1,4177 @@
+#!/usr/bin/env bs
+
+# Name      : mandelbrot
+# Author    : Erik Bosman
+# Purpose   : A mandelbrot set fractal viewer
+
+m +13
+l:
+	m -1
+	r 1
+	m +2
+	r 3
+	m +5
+	r 1
+	m +2
+	r 1
+	m +1
+	l 6
+:l
+r 5
+m +6
+r 1
+m -3
+r 10
+m +15
+l:
+
+	l:
+		r 9
+	:l
+	m +1
+	l:
+		l 9
+	:l
+	r 9
+	m -1
+:l
+m +1
+l:
+	r 8
+	l:
+		m -1
+	:l
+	r 1
+:l
+l 9
+l:
+	l 9
+:l
+r 8
+l:
+	m -1
+:l
+m +1
+l 7
+m +5
+l:
+	m -1
+	l:
+		m -1
+		r 9
+		m +1
+		l 9
+	:l
+	r 9
+:l
+r 7
+m +1
+r 25
+r 2
+m +1
+l 17
+l:
+	l 9
+:l
+r 3
+l:
+	m -1
+:l
+m +1
+l:
+	r 6
+	l:
+		r 7
+		l:
+			m -1
+		:l
+		r 2
+	:l
+	l 9
+	l:
+		l 9
+	:l
+	r 7
+	l:
+		m -1
+	:l
+	m +1
+	l 6
+	m +4
+	l:
+		m -1
+		l:
+			m -1
+			r 9
+			m +1
+			l 9
+		:l
+		r 9
+	:l
+	r 6
+	m +1
+	l 6
+	m +7
+	l:
+		m -1
+		l:
+			m -1
+			r 9
+			m +1
+			l 9
+		:l
+		r 9
+	:l
+	r 6
+	m +1
+	l 16
+	l:
+		l 9
+	:l
+	r 3
+	l:
+
+		l:
+			m -1
+		:l
+		r 6
+		l:
+			r 7
+			l:
+				m -1
+				l 6
+				m +1
+				r 6
+			:l
+			l 6
+			l:
+				m -1
+				r 6
+				m +1
+				l 2
+				m +1
+				l 3
+				m +1
+				l 1
+			:l
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 8
+			l:
+				m -1
+				l 7
+				m +1
+				r 7
+			:l
+			l 7
+			l:
+				m -1
+				r 7
+				m +1
+				l 2
+				m +1
+				l 3
+				m +1
+				l 2
+			:l
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 7
+		l:
+			m -1
+			l 7
+			m +1
+			r 7
+		:l
+		l 7
+		l:
+			m -1
+			r 7
+			m +1
+			l 2
+			m +1
+			l 5
+		:l
+		r 9
+		m +15
+		l:
+
+			l:
+				r 9
+			:l
+			m +1
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m -1
+		:l
+		m +1
+		l:
+			r 1
+			m +1
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 1
+			m -1
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 4
+			:l
+			l 4
+			l:
+				m -1
+				r 4
+				m +1
+				l 5
+				l:
+					m -1
+					r 2
+					l:
+						m -1
+						l 2
+						m +1
+						r 2
+					:l
+					l 2
+					l:
+						m -1
+						r 2
+						m +1
+						r 2
+						m +1
+						l 4
+					:l
+					m +1
+					r 9
+				:l
+				l 8
+				l:
+					l 9
+				:l
+
+			:l
+			r 9
+			l:
+				r 9
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 10
+			:l
+			r 1
+			l:
+				m -1
+				r 9
+				m +1
+				l 9
+			:l
+			l 1
+			m +1
+			r 8
+		:l
+		l 9
+		l:
+			r 1
+			l:
+				m -1
+			:l
+			l 1
+			m -1
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 1
+				l:
+					l 1
+					m -1
+					r 1
+					m -1
+					l 6
+					m +1
+					r 6
+				:l
+				l 1
+				l:
+					m -1
+					r 1
+					m +1
+					l 1
+				:l
+				r 4
+			:l
+			l 3
+			l:
+				m -1
+				r 3
+				m +1
+				l 3
+			:l
+			l 1
+			m +1
+			l 9
+		:l
+		r 9
+		l:
+			r 1
+			m +1
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 1
+			m -1
+			r 5
+			l:
+				m -1
+				l 5
+				m +1
+				r 5
+			:l
+			l 5
+			l:
+				m -1
+				r 5
+				m +1
+				l 6
+				l:
+					m -1
+					r 3
+					l:
+						m -1
+						l 3
+						m +1
+						r 3
+					:l
+					l 3
+					l:
+						m -1
+						r 3
+						m +1
+						r 1
+						m +1
+						l 4
+					:l
+					m +1
+					r 9
+				:l
+				l 8
+				l:
+					l 9
+				:l
+
+			:l
+			r 9
+			l:
+				r 9
+			:l
+			l 9
+			l:
+				r 2
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 11
+			:l
+			r 2
+			l:
+				m -1
+				r 9
+				m +1
+				l 9
+			:l
+			l 2
+			m +1
+			r 8
+		:l
+		l 9
+		l:
+			r 1
+			l:
+				m -1
+			:l
+			l 1
+			m -1
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 1
+				l:
+					l 1
+					m -1
+					r 1
+					m -1
+					l 6
+					m +1
+					r 6
+				:l
+				l 1
+				l:
+					m -1
+					r 1
+					m +1
+					l 1
+				:l
+				r 4
+			:l
+			l 3
+			l:
+				m -1
+				r 3
+				m +1
+				l 3
+			:l
+			l 1
+			m +1
+			l 9
+		:l
+		r 9
+		l:
+			r 4
+			l:
+				m -1
+				l 25
+				l 11
+				m +1
+				r 25
+				r 11
+			:l
+			r 5
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 9
+		m +15
+		l:
+
+			l:
+				r 9
+			:l
+			l 9
+			m -1
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m -1
+		:l
+		m +1
+		r 21
+		m +1
+		l 3
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 3
+			l:
+				m -1
+				l 3
+				m -1
+				r 3
+			:l
+			m +1
+			l 3
+			l:
+				m -1
+				r 3
+				m -1
+				r 1
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 13
+					l:
+						l 9
+					:l
+					r 4
+					l:
+						m -1
+					:l
+					m +1
+					r 5
+					l:
+						r 9
+					:l
+					r 1
+					m +1
+					l 1
+				:l
+
+			:l
+			m +1
+			r 4
+			l:
+				m -1
+				l 4
+				m -1
+				r 4
+			:l
+			m +1
+			l 4
+			l:
+				m -1
+				r 4
+				m -1
+				l 1
+				l:
+					m -1
+					l 3
+					m +1
+					r 3
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					l 12
+					l:
+						l 9
+					:l
+					r 3
+					l:
+						m -1
+					:l
+					m +1
+					r 6
+					l:
+						r 9
+					:l
+					r 1
+					l:
+						m -1
+					:l
+					m +1
+					l 1
+				:l
+
+			:l
+			m +1
+			r 1
+			l:
+				m -1
+				l 1
+				l:
+					r 9
+				:l
+				l 8
+			:l
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		l 7
+		l:
+			m -1
+			r 1
+			m +1
+			r 3
+			m -1
+			l 4
+		:l
+		r 9
+		m +25
+		m +1
+		r 2
+		l:
+			m -1
+			l 4
+			m +1
+			r 4
+		:l
+		l 4
+		l:
+			m -1
+			r 4
+			m +1
+			l 2
+			l:
+				m -1
+			:l
+			l 2
+		:l
+		r 2
+		l:
+			l 7
+			m +1
+			l 1
+			l:
+				m -1
+				l 1
+				m +1
+				r 4
+				m +1
+				l 2
+				l:
+					m -1
+				:l
+
+			:l
+			r 1
+			l:
+				m -1
+				l 2
+				l:
+					m -1
+					r 1
+					m +1
+					r 3
+					m -1
+					l 4
+				:l
+				r 3
+			:l
+			r 13
+			l:
+				r 2
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 5
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 3
+			l:
+				m -1
+			:l
+			r 6
+			l:
+				r 5
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 3
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 2
+				l:
+					m -1
+					l 9
+					m +1
+					r 9
+				:l
+				r 7
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			l:
+				r 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m -1
+				r 5
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 5
+				l:
+					m -1
+					r 5
+					m +1
+					l 6
+					l:
+						m -1
+						r 2
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							r 1
+							m +1
+							l 3
+						:l
+						m +1
+						r 9
+					:l
+					l 8
+					l:
+						l 9
+					:l
+
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 9
+						m +1
+						l 9
+					:l
+					l 10
+				:l
+				r 1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 3
+				l:
+					m -1
+					l 3
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 7
+						m +1
+						r 7
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 3
+				:l
+				l 2
+				l:
+					m -1
+					r 2
+					m +1
+					l 2
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 9
+			l:
+				r 6
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 5
+				l:
+					m -1
+					r 5
+					m +1
+					l 4
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m -1
+				r 5
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 5
+				l:
+					m -1
+					r 5
+					m +1
+					l 6
+					l:
+						m -1
+						r 2
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							r 2
+							m +1
+							l 4
+						:l
+						m +1
+						r 9
+					:l
+					l 8
+					l:
+						l 9
+					:l
+
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 9
+						m +1
+						l 9
+					:l
+					l 10
+				:l
+				r 1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 6
+						m +1
+						r 6
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 4
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					l 3
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 9
+			l:
+				r 4
+				l:
+					m -1
+					l 25
+					l 11
+					m +1
+					r 25
+					r 11
+				:l
+				r 5
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 3
+				l:
+					m -1
+					l 25
+					l 11
+					m +1
+					r 25
+					r 11
+				:l
+				r 6
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				l 9
+				m -1
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			l:
+				r 8
+				l:
+					m -1
+					l 7
+					m +1
+					r 7
+				:l
+				l 7
+				l:
+					m -1
+					r 7
+					m +1
+					l 6
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 6
+				l:
+					m -1
+				:l
+				r 3
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 4
+			m +1
+			r 1
+			l:
+				m -1
+				l 1
+				m -1
+				l 4
+				m +1
+				r 5
+			:l
+			r 1
+			l:
+				m -1
+				l 6
+				l:
+					m -1
+					r 5
+					m +1
+					l 1
+					m +2
+					l 4
+				:l
+				r 5
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 1
+				m -1
+				r 1
+				m +1
+				r 1
+			:l
+			l 1
+			l:
+				m -1
+				r 1
+				m +1
+				l 1
+			:l
+			l 5
+			l:
+				m -1
+				r 5
+				m +1
+				l 5
+			:l
+			r 6
+			l:
+				m -1
+			:l
+			l 6
+			m +1
+			r 4
+			l:
+				m -1
+				l 4
+				m -1
+				r 4
+			:l
+			m +1
+			l 4
+			l:
+				m -1
+				r 4
+				m -1
+				r 5
+				l:
+					r 2
+					l:
+						m -1
+						l 2
+						m -1
+						r 2
+					:l
+					m +1
+					l 2
+					l:
+						m -1
+						r 2
+						m -1
+						r 1
+						l:
+							m -1
+							l 3
+							m +1
+							r 3
+						:l
+						l 3
+						l:
+							m -1
+							r 3
+							m +1
+							l 12
+							l:
+								l 9
+							:l
+							r 3
+							l:
+								m -1
+							:l
+							m +1
+							r 6
+							l:
+								r 9
+							:l
+							r 1
+							m +1
+							l 1
+						:l
+
+					:l
+					m +1
+					r 3
+					l:
+						m -1
+						l 3
+						m -1
+						r 3
+					:l
+					m +1
+					l 3
+					l:
+						m -1
+						r 3
+						m -1
+						l 1
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							l 11
+							l:
+								l 9
+							:l
+							r 4
+							l:
+								m -1
+							:l
+							m +1
+							r 5
+							l:
+								r 9
+							:l
+							r 1
+							l:
+								m -1
+							:l
+							m +1
+							l 1
+						:l
+
+					:l
+					m +1
+					r 1
+					l:
+						m -1
+						l 1
+						l:
+							r 9
+						:l
+						l 8
+					:l
+					r 8
+				:l
+				l 9
+				l:
+					l 9
+				:l
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					r 5
+					l:
+						r 1
+						m +1
+						r 2
+						l:
+							m -1
+							l 2
+							m -1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							l 2
+						:l
+						r 8
+					:l
+					l 8
+					m +1
+					l 1
+					l:
+						r 1
+						l:
+							m -1
+							r 5
+							m +1
+							l 4
+							l:
+								m -1
+								r 4
+								m -1
+								l 14
+								m +1
+								r 11
+								l:
+									m -1
+									r 3
+									m +1
+									l 3
+								:l
+								l 1
+							:l
+							r 1
+							l:
+								m -1
+								r 3
+								m -1
+								l 14
+								m +1
+								r 11
+							:l
+							l 2
+						:l
+						r 1
+						l:
+							m -1
+							r 4
+							m +1
+							l 3
+							l:
+								m -1
+								r 3
+								m -1
+								l 14
+								m +1
+								r 11
+							:l
+							l 1
+						:l
+						r 1
+						l:
+							m -1
+							r 3
+							m +1
+							l 3
+						:l
+						l 12
+					:l
+					r 4
+					l:
+						m -1
+					:l
+					l 4
+				:l
+				r 3
+				l:
+					m -1
+					l 3
+					m +1
+					r 3
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					r 6
+					l:
+						r 1
+						m +1
+						r 1
+						l:
+							m -1
+							l 1
+							m -1
+							r 1
+						:l
+						l 1
+						l:
+							m -1
+							r 1
+							m +1
+							l 1
+						:l
+						r 8
+					:l
+					l 8
+					m +1
+					l 1
+					l:
+						r 1
+						l:
+							m -1
+							r 5
+							m +1
+							l 3
+							l:
+								m -1
+								r 3
+								m -1
+								l 14
+								m +1
+								r 10
+								l:
+									m -1
+									r 4
+									m +1
+									l 4
+								:l
+								r 1
+							:l
+							l 1
+							l:
+								m -1
+								r 4
+								m -1
+								l 14
+								m +1
+								r 10
+							:l
+							l 1
+						:l
+						r 2
+						l:
+							m -1
+							r 3
+							m +1
+							l 4
+							l:
+								m -1
+								r 4
+								m -1
+								l 14
+								m +1
+								r 10
+							:l
+							r 1
+						:l
+						l 1
+						l:
+							m -1
+							r 4
+							m +1
+							l 4
+						:l
+						l 11
+					:l
+					r 6
+					m +1
+					l 6
+				:l
+
+			:l
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 4
+			:l
+			l 4
+			l:
+				m -1
+				r 4
+				m +1
+				r 5
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 5
+						m +1
+						l 4
+						l:
+							m -1
+							r 4
+							m -1
+							l 14
+							m +1
+							r 11
+							l:
+								m -1
+								r 3
+								m +1
+								l 3
+							:l
+							l 1
+						:l
+						r 1
+						l:
+							m -1
+							r 3
+							m -1
+							l 14
+							m +1
+							r 11
+						:l
+						l 2
+					:l
+					r 1
+					l:
+						m -1
+						r 4
+						m +1
+						l 3
+						l:
+							m -1
+							r 3
+							m -1
+							l 14
+							m +1
+							r 11
+						:l
+						l 1
+					:l
+					r 1
+					l:
+						m -1
+						r 3
+						m +1
+						l 3
+					:l
+					l 12
+				:l
+
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 2
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 5
+			l:
+				r 2
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 6
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 5
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 3
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			l:
+				r 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m -1
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 5
+					l:
+						m -1
+						r 2
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							r 1
+							m +1
+							l 3
+						:l
+						m +1
+						r 9
+					:l
+					l 8
+					l:
+						l 9
+					:l
+
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 9
+						m +1
+						l 9
+					:l
+					l 10
+				:l
+				r 1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 3
+				l:
+					m -1
+					l 3
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 7
+						m +1
+						r 7
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 3
+				:l
+				l 2
+				l:
+					m -1
+					r 2
+					m +1
+					l 2
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 9
+			l:
+				r 3
+				l:
+					m -1
+					l 25
+					l 11
+					m +1
+					r 25
+					r 11
+				:l
+				r 6
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 5
+			l:
+				m -1
+			:l
+			r 4
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				l 9
+				m -1
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			l:
+				r 3
+				l:
+					m -1
+					l 3
+					m -1
+					r 3
+				:l
+				m +1
+				l 3
+				l:
+					m -1
+					r 3
+					m -1
+					r 1
+					l:
+						m -1
+						l 4
+						m +1
+						r 4
+					:l
+					l 4
+					l:
+						m -1
+						r 4
+						m +1
+						l 13
+						l:
+							l 9
+						:l
+						r 4
+						l:
+							m -1
+						:l
+						m +1
+						r 5
+						l:
+							r 9
+						:l
+						r 1
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 4
+				l:
+					m -1
+					l 4
+					m -1
+					r 4
+				:l
+				m +1
+				l 4
+				l:
+					m -1
+					r 4
+					m -1
+					l 1
+					l:
+						m -1
+						l 3
+						m +1
+						r 3
+					:l
+					l 3
+					l:
+						m -1
+						r 3
+						m +1
+						l 12
+						l:
+							l 9
+						:l
+						r 3
+						l:
+							m -1
+						:l
+						m +1
+						r 6
+						l:
+							r 9
+						:l
+						r 1
+						l:
+							m -1
+						:l
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+					l 1
+					l:
+						r 9
+					:l
+					l 8
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 3
+			l:
+				m -1
+				l 3
+				m +1
+				r 3
+			:l
+			l 3
+			l:
+				m -1
+				r 3
+				m +1
+				r 6
+				l:
+					r 1
+					m +1
+					r 3
+					l:
+						m -1
+						l 3
+						m -1
+						r 3
+					:l
+					l 3
+					l:
+						m -1
+						r 3
+						m +1
+						l 3
+					:l
+					r 8
+				:l
+				l 8
+				m +1
+				l 1
+				l:
+					r 1
+					l:
+						m -1
+						r 1
+						m +1
+						r 1
+						l:
+							m -1
+							l 1
+							m -1
+							l 10
+							m +1
+							r 12
+							l:
+								m -1
+								l 2
+								m +1
+								r 2
+							:l
+							l 1
+						:l
+						r 1
+						l:
+							m -1
+							l 2
+							m -1
+							l 10
+							m +1
+							r 12
+						:l
+						l 3
+					:l
+					r 2
+					l:
+						m -1
+						l 1
+						m +1
+						r 2
+						l:
+							m -1
+							l 2
+							m -1
+							l 10
+							m +1
+							r 12
+						:l
+						l 1
+					:l
+					r 1
+					l:
+						m -1
+						l 2
+						m +1
+						r 2
+					:l
+					l 13
+				:l
+
+			:l
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 4
+			:l
+			l 4
+			l:
+				m -1
+				r 4
+				m +1
+				r 5
+				l:
+					r 1
+					m +1
+					r 2
+					l:
+						m -1
+						l 2
+						m -1
+						r 2
+					:l
+					l 2
+					l:
+						m -1
+						r 2
+						m +1
+						l 2
+					:l
+					r 8
+				:l
+				l 8
+				m +1
+				l 1
+				l:
+					r 1
+					l:
+						m -1
+						r 1
+						m +1
+						r 2
+						l:
+							m -1
+							l 2
+							m -1
+							l 10
+							m +1
+							r 11
+							l:
+								m -1
+								l 1
+								m +1
+								r 1
+							:l
+							r 1
+						:l
+						l 1
+						l:
+							m -1
+							l 1
+							m -1
+							l 10
+							m +1
+							r 11
+						:l
+						l 2
+					:l
+					r 3
+					l:
+						m -1
+						l 2
+						m +1
+						r 1
+						l:
+							m -1
+							l 1
+							m -1
+							l 10
+							m +1
+							r 11
+						:l
+						r 1
+					:l
+					l 1
+					l:
+						m -1
+						l 1
+						m +1
+						r 1
+					:l
+					l 12
+				:l
+				r 5
+				m +1
+				l 5
+			:l
+			r 9
+			l:
+				r 3
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 4
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 3
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 5
+			l:
+				r 7
+				l:
+					m -1
+					l 6
+					m +1
+					r 6
+				:l
+				l 6
+				l:
+					m -1
+					r 6
+					m +1
+					l 4
+					m +1
+					l 2
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 4
+			m +1
+			r 1
+			l:
+				m -1
+				l 1
+				m -1
+				l 4
+				m +1
+				r 5
+			:l
+			r 2
+			l:
+				m -1
+				l 7
+				l:
+					m -1
+					r 5
+					m +1
+					l 1
+					m +2
+					l 4
+				:l
+				r 5
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 1
+				m -1
+				r 1
+				m +1
+				r 2
+			:l
+			l 2
+			l:
+				m -1
+				r 2
+				m +1
+				l 2
+			:l
+			l 5
+			l:
+				m -1
+				r 5
+				m +1
+				l 5
+			:l
+			m +1
+			r 4
+			l:
+				m -1
+				l 4
+				m -1
+				r 4
+			:l
+			m +1
+			l 4
+			l:
+				m -1
+				r 4
+				m -1
+				r 5
+				l:
+					r 3
+					l:
+						m -1
+						l 3
+						m -1
+						r 3
+					:l
+					m +1
+					l 3
+					l:
+						m -1
+						r 3
+						m -1
+						l 1
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							l 11
+							l:
+								l 9
+							:l
+							r 4
+							l:
+								m -1
+							:l
+							m +1
+							r 5
+							l:
+								r 9
+							:l
+							r 1
+							m +1
+							l 1
+						:l
+
+					:l
+					m +1
+					r 2
+					l:
+						m -1
+						l 2
+						m -1
+						r 2
+					:l
+					m +1
+					l 2
+					l:
+						m -1
+						r 2
+						m -1
+						r 1
+						l:
+							m -1
+							l 3
+							m +1
+							r 3
+						:l
+						l 3
+						l:
+							m -1
+							r 3
+							m +1
+							l 12
+							l:
+								l 9
+							:l
+							r 3
+							l:
+								m -1
+							:l
+							m +1
+							r 6
+							l:
+								r 9
+							:l
+							r 1
+							l:
+								m -1
+							:l
+							m +1
+							l 1
+						:l
+
+					:l
+					m +1
+					r 1
+					l:
+						m -1
+						l 1
+						l:
+							r 9
+						:l
+						l 8
+					:l
+					r 8
+				:l
+				l 9
+				l:
+					l 9
+				:l
+				r 3
+				l:
+					m -1
+					l 3
+					m +1
+					r 3
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					r 6
+					l:
+						r 1
+						m +1
+						r 1
+						l:
+							m -1
+							l 1
+							m -1
+							r 1
+						:l
+						l 1
+						l:
+							m -1
+							r 1
+							m +1
+							l 1
+						:l
+						r 8
+					:l
+					l 8
+					m +1
+					l 1
+					l:
+						r 1
+						l:
+							m -1
+							r 4
+							m +1
+							l 2
+							l:
+								m -1
+								r 2
+								m -1
+								l 13
+								m +1
+								r 10
+								l:
+									m -1
+									r 3
+									m +1
+									l 3
+								:l
+								r 1
+							:l
+							l 1
+							l:
+								m -1
+								r 3
+								m -1
+								l 13
+								m +1
+								r 10
+							:l
+							l 1
+						:l
+						r 2
+						l:
+							m -1
+							r 2
+							m +1
+							l 3
+							l:
+								m -1
+								r 3
+								m -1
+								l 13
+								m +1
+								r 10
+							:l
+							r 1
+						:l
+						l 1
+						l:
+							m -1
+							r 3
+							m +1
+							l 3
+						:l
+						l 11
+					:l
+					r 5
+					l:
+						m -1
+					:l
+					r 2
+					l:
+						m -1
+						l 7
+						m +1
+						r 7
+					:l
+					l 7
+					l:
+						m -1
+						r 7
+						m +1
+						l 2
+						m +1
+						l 5
+					:l
+
+				:l
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					r 5
+					l:
+						r 1
+						m +1
+						r 2
+						l:
+							m -1
+							l 2
+							m -1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							l 2
+						:l
+						r 8
+					:l
+					l 8
+					m +1
+					l 1
+					l:
+						r 1
+						l:
+							m -1
+							r 4
+							m +1
+							l 3
+							l:
+								m -1
+								r 3
+								m -1
+								l 13
+								m +1
+								r 11
+								l:
+									m -1
+									r 2
+									m +1
+									l 2
+								:l
+								l 1
+							:l
+							r 1
+							l:
+								m -1
+								r 2
+								m -1
+								l 13
+								m +1
+								r 11
+							:l
+							l 2
+						:l
+						r 1
+						l:
+							m -1
+							r 3
+							m +1
+							l 2
+							l:
+								m -1
+								r 2
+								m -1
+								l 13
+								m +1
+								r 11
+							:l
+							l 1
+						:l
+						r 1
+						l:
+							m -1
+							r 2
+							m +1
+							l 2
+						:l
+						l 12
+					:l
+
+				:l
+				r 4
+				l:
+					m -1
+				:l
+				l 4
+			:l
+			r 4
+			l:
+				m -1
+				l 4
+				m +1
+				r 4
+			:l
+			l 4
+			l:
+				m -1
+				r 4
+				m +1
+				r 1
+				l:
+					m -1
+				:l
+				r 2
+				l:
+					m -1
+					l 7
+					m +1
+					r 7
+				:l
+				l 7
+				l:
+					m -1
+					r 7
+					m +1
+					l 2
+					m +1
+					l 5
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 4
+						m +1
+						l 3
+						l:
+							m -1
+							r 3
+							m -1
+							l 13
+							m +1
+							r 11
+							l:
+								m -1
+								r 2
+								m +1
+								l 2
+							:l
+							l 1
+						:l
+						r 1
+						l:
+							m -1
+							r 2
+							m -1
+							l 13
+							m +1
+							r 11
+						:l
+						l 2
+					:l
+					r 1
+					l:
+						m -1
+						r 3
+						m +1
+						l 2
+						l:
+							m -1
+							r 2
+							m -1
+							l 13
+							m +1
+							r 11
+						:l
+						l 1
+					:l
+					r 1
+					l:
+						m -1
+						r 2
+						m +1
+						l 2
+					:l
+					l 12
+				:l
+
+			:l
+			r 9
+			l:
+				r 2
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 6
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 3
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 5
+			l:
+				r 5
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 3
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 6
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 5
+				l:
+					m -1
+					r 5
+					m +1
+					l 3
+					m +1
+					l 2
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				r 1
+				l:
+					m -1
+				:l
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			l:
+				r 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m -1
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 5
+					l:
+						m -1
+						r 2
+						l:
+							m -1
+							l 2
+							m +1
+							r 2
+						:l
+						l 2
+						l:
+							m -1
+							r 2
+							m +1
+							r 2
+							m +1
+							l 4
+						:l
+						m +1
+						r 9
+					:l
+					l 8
+					l:
+						l 9
+					:l
+
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 1
+					l:
+						m -1
+						r 9
+						m +1
+						l 9
+					:l
+					l 10
+				:l
+				r 1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 6
+						m +1
+						r 6
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 4
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					l 3
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 1
+				m -1
+				r 5
+				l:
+					m -1
+					l 5
+					m +1
+					r 5
+				:l
+				l 5
+				l:
+					m -1
+					r 5
+					m +1
+					l 6
+					l:
+						m -1
+						r 3
+						l:
+							m -1
+							l 3
+							m +1
+							r 3
+						:l
+						l 3
+						l:
+							m -1
+							r 3
+							m +1
+							r 1
+							m +1
+							l 4
+						:l
+						m +1
+						r 9
+					:l
+					l 8
+					l:
+						l 9
+					:l
+
+				:l
+				r 9
+				l:
+					r 9
+				:l
+				l 9
+				l:
+					r 2
+					l:
+						m -1
+						r 9
+						m +1
+						l 9
+					:l
+					l 11
+				:l
+				r 2
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				l 2
+				m +1
+				r 8
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 4
+				l:
+					m -1
+					l 4
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 6
+						m +1
+						r 6
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 4
+				:l
+				l 3
+				l:
+					m -1
+					r 3
+					m +1
+					l 3
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 9
+			l:
+				r 4
+				l:
+					m -1
+					l 25
+					l 11
+					m +1
+					r 25
+					r 11
+				:l
+				r 5
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 9
+			m +15
+			l:
+
+				l:
+					r 9
+				:l
+				l 9
+				m -1
+				l 9
+				l:
+					l 9
+				:l
+				r 9
+				m -1
+			:l
+			m +1
+			r 21
+			m +1
+			l 3
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 3
+				l:
+					m -1
+					l 3
+					m -1
+					r 3
+				:l
+				m +1
+				l 3
+				l:
+					m -1
+					r 3
+					m -1
+					r 1
+					l:
+						m -1
+						l 4
+						m +1
+						r 4
+					:l
+					l 4
+					l:
+						m -1
+						r 4
+						m +1
+						l 13
+						l:
+							l 9
+						:l
+						r 4
+						l:
+							m -1
+						:l
+						m +1
+						r 5
+						l:
+							r 9
+						:l
+						r 1
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 4
+				l:
+					m -1
+					l 4
+					m -1
+					r 4
+				:l
+				m +1
+				l 4
+				l:
+					m -1
+					r 4
+					m -1
+					l 1
+					l:
+						m -1
+						l 3
+						m +1
+						r 3
+					:l
+					l 3
+					l:
+						m -1
+						r 3
+						m +1
+						l 12
+						l:
+							l 9
+						:l
+						r 3
+						l:
+							m -1
+						:l
+						m +1
+						r 6
+						l:
+							r 9
+						:l
+						r 1
+						l:
+							m -1
+						:l
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+					l 1
+					l:
+						r 9
+					:l
+					l 8
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 2
+			m -1
+			r 2
+			l:
+				m -1
+				l 4
+				m +1
+				r 4
+			:l
+			l 4
+			l:
+				m -1
+				r 4
+				m +1
+				l 2
+				l:
+					m -1
+				:l
+				l 2
+			:l
+			r 2
+		:l
+		l 2
+		m +1
+		r 4
+		l:
+			m -1
+			l 4
+			m -1
+			r 4
+		:l
+		m +1
+		l 4
+		l:
+			m -1
+			r 4
+			m -1
+			l 6
+			o 1
+			r 2
+		:l
+		r 4
+		l:
+			m -1
+			l 7
+			o 1
+			r 7
+		:l
+		l 3
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			m -1
+		:l
+		r 3
+		l:
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 1
+			l:
+				m -1
+			:l
+			r 3
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 5
+			l:
+				m -1
+			:l
+			r 4
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 1
+		m +11
+		l:
+			m -1
+			l:
+				m -1
+				r 9
+				m +1
+				l 9
+			:l
+			r 9
+		:l
+		r 4
+		m +1
+		r 9
+		m +1
+		l 14
+		l:
+			l 9
+		:l
+		r 7
+		l:
+			m -1
+			l 7
+			m +1
+			r 7
+		:l
+		l 7
+		l:
+			m -1
+			r 7
+			m +1
+			l:
+				m -1
+			:l
+			r 2
+			l:
+				r 9
+			:l
+			l 9
+			l:
+				r 7
+				l:
+					m -1
+					l 6
+					m +1
+					r 6
+				:l
+				l 6
+				l:
+					m -1
+					r 6
+					m +1
+					l 7
+					l:
+						l 9
+					:l
+					r 7
+					l:
+						m -1
+					:l
+					m +1
+					r 3
+				:l
+				l 10
+			:l
+
+		:l
+		r 7
+		l:
+			m -1
+			l 7
+			m +1
+			r 7
+		:l
+		l 7
+		l:
+			m -1
+			r 7
+			m +1
+			r 2
+			l:
+				r 1
+				m +1
+				r 4
+				l:
+					m -1
+					l 4
+					m -1
+					r 4
+				:l
+				l 4
+				l:
+					m -1
+					r 4
+					m +1
+					l 4
+				:l
+				r 8
+			:l
+			l 2
+			m +1
+			l 7
+			l:
+				r 5
+				l:
+					m -1
+					r 2
+					m +1
+					l 2
+				:l
+				l 14
+			:l
+			r 9
+			l:
+				r 9
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 7
+				l:
+					m -1
+					l 7
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 3
+						m +1
+						r 3
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 7
+				:l
+				l 6
+				l:
+					m -1
+					r 6
+					m +1
+					l 6
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 7
+			m -1
+			l 4
+			l:
+				m -1
+			:l
+			m +1
+			l 3
+		:l
+		m +1
+		r 7
+		l:
+			m -1
+			l 7
+			m -1
+			r 7
+		:l
+		m +1
+		l 7
+		l:
+			m -1
+			r 7
+			m -1
+			r 2
+			l:
+				r 5
+				l:
+					m -1
+					r 2
+					m +1
+					l 2
+				:l
+				r 4
+			:l
+			l 9
+			l:
+				r 1
+				l:
+					m -1
+				:l
+				l 1
+				m -1
+				r 7
+				l:
+					m -1
+					l 7
+					m +1
+					r 1
+					l:
+						l 1
+						m -1
+						r 1
+						m -1
+						l 3
+						m +1
+						r 3
+					:l
+					l 1
+					l:
+						m -1
+						r 1
+						m +1
+						l 1
+					:l
+					r 7
+				:l
+				l 6
+				l:
+					m -1
+					r 6
+					m +1
+					l 6
+				:l
+				l 1
+				m +1
+				l 9
+			:l
+			r 1
+			m +5
+			l:
+				m -1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				r 9
+			:l
+			r 4
+			m +1
+			l 5
+			l:
+				l 9
+			:l
+			r 9
+			l:
+				r 5
+				l:
+					m -1
+					l 5
+					m -1
+					r 5
+				:l
+				m +1
+				l 5
+				l:
+					m -1
+					r 5
+					m -1
+					r 2
+					l:
+						m -1
+						l 7
+						m +1
+						r 7
+					:l
+					l 7
+					l:
+						m -1
+						r 7
+						m +1
+						l 16
+						l:
+							l 9
+						:l
+						r 4
+						l:
+							m -1
+						:l
+						m +1
+						r 5
+						l:
+							r 9
+						:l
+						r 1
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 7
+				l:
+					m -1
+					l 7
+					m -1
+					r 7
+				:l
+				m +1
+				l 7
+				l:
+					m -1
+					r 7
+					m -1
+					l 2
+					l:
+						m -1
+						l 5
+						m +1
+						r 5
+					:l
+					l 5
+					l:
+						m -1
+						r 5
+						m +1
+						l 14
+						l:
+							l 9
+						:l
+						r 3
+						l:
+							m -1
+						:l
+						m +1
+						r 6
+						l:
+							r 9
+						:l
+						r 1
+						l:
+							m -1
+						:l
+						m +1
+						l 1
+					:l
+
+				:l
+				m +1
+				r 1
+				l:
+					m -1
+					l 1
+					l:
+						r 9
+					:l
+					l 8
+				:l
+				r 8
+			:l
+			l 9
+			l:
+				l 9
+			:l
+			r 4
+			l:
+				m -1
+			:l
+			l 3
+			m +5
+			l:
+				m -1
+				l:
+					m -1
+					r 9
+					m +1
+					l 9
+				:l
+				r 9
+			:l
+			r 4
+			m -1
+			l 5
+			l:
+				l 9
+			:l
+
+		:l
+		r 3
+	:l
+	l 4
+	o 1
+	r 10
+	l:
+		r 6
+		l:
+			m -1
+		:l
+		r 3
+	:l
+	l 9
+	l:
+		l 9
+	:l
+	r 1
+	m +10
+	l:
+		m -1
+		l:
+			m -1
+			r 9
+			m +1
+			l 9
+		:l
+		r 9
+	:l
+	r 5
+	m +1
+	r 9
+	m +1
+	l 15
+	l:
+		l 9
+	:l
+	r 8
+	l:
+		m -1
+		l 8
+		m +1
+		r 8
+	:l
+	l 8
+	l:
+		m -1
+		r 8
+		m +1
+		l:
+			m -1
+		:l
+		r 1
+		l:
+			r 9
+		:l
+		l 9
+		l:
+			r 8
+			l:
+				m -1
+				l 7
+				m +1
+				r 7
+			:l
+			l 7
+			l:
+				m -1
+				r 7
+				m +1
+				l 8
+				l:
+					l 9
+				:l
+				r 8
+				l:
+					m -1
+				:l
+				m +1
+				r 2
+			:l
+			l 10
+		:l
+
+	:l
+	r 8
+	l:
+		m -1
+		l 8
+		m +1
+		r 8
+	:l
+	l 8
+	l:
+		m -1
+		r 8
+		m +1
+		r 1
+		l:
+			r 1
+			m +1
+			r 5
+			l:
+				m -1
+				l 5
+				m -1
+				r 5
+			:l
+			l 5
+			l:
+				m -1
+				r 5
+				m +1
+				l 5
+			:l
+			r 8
+		:l
+		l 1
+		m +1
+		l 8
+		l:
+			r 6
+			l:
+				m -1
+				r 2
+				m +1
+				l 2
+			:l
+			l 15
+		:l
+		r 9
+		l:
+			r 9
+		:l
+		l 9
+		l:
+			r 1
+			l:
+				m -1
+			:l
+			l 1
+			m -1
+			r 8
+			l:
+				m -1
+				l 8
+				m +1
+				r 1
+				l:
+					l 1
+					m -1
+					r 1
+					m -1
+					l 2
+					m +1
+					r 2
+				:l
+				l 1
+				l:
+					m -1
+					r 1
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 7
+			l:
+				m -1
+				r 7
+				m +1
+				l 7
+			:l
+			l 1
+			m +1
+			l 9
+		:l
+		r 8
+		m -1
+		l 5
+		l:
+			m -1
+		:l
+		m +1
+		l 3
+	:l
+	m +1
+	r 8
+	l:
+		m -1
+		l 8
+		m -1
+		r 8
+	:l
+	m +1
+	l 8
+	l:
+		m -1
+		r 8
+		m -1
+		r 1
+		l:
+			r 6
+			l:
+				m -1
+				r 2
+				m +1
+				l 2
+			:l
+			r 3
+		:l
+		l 9
+		l:
+			r 1
+			l:
+				m -1
+			:l
+			l 1
+			m -1
+			r 8
+			l:
+				m -1
+				l 8
+				m +1
+				r 1
+				l:
+					l 1
+					m -1
+					r 1
+					m -1
+					l 2
+					m +1
+					r 2
+				:l
+				l 1
+				l:
+					m -1
+					r 1
+					m +1
+					l 1
+				:l
+				r 8
+			:l
+			l 7
+			l:
+				m -1
+				r 7
+				m +1
+				l 7
+			:l
+			l 1
+			m +1
+			l 9
+		:l
+		r 1
+		m +5
+		l:
+			m -1
+			l:
+				m -1
+				r 9
+				m +1
+				l 9
+			:l
+			r 9
+		:l
+		r 5
+		m +1
+		r 25
+		r 2
+		m +1
+		l 6
+		l:
+			l 9
+		:l
+		r 9
+		l:
+			r 6
+			l:
+				m -1
+				l 6
+				m -1
+				r 6
+			:l
+			m +1
+			l 6
+			l:
+				m -1
+				r 6
+				m -1
+				r 2
+				l:
+					m -1
+					l 8
+					m +1
+					r 8
+				:l
+				l 8
+				l:
+					m -1
+					r 8
+					m +1
+					l 17
+					l:
+						l 9
+					:l
+					r 4
+					l:
+						m -1
+					:l
+					m +1
+					r 5
+					l:
+						r 9
+					:l
+					r 1
+					m +1
+					l 1
+				:l
+
+			:l
+			m +1
+			r 8
+			l:
+				m -1
+				l 8
+				m -1
+				r 8
+			:l
+			m +1
+			l 8
+			l:
+				m -1
+				r 8
+				m -1
+				l 2
+				l:
+					m -1
+					l 6
+					m +1
+					r 6
+				:l
+				l 6
+				l:
+					m -1
+					r 6
+					m +1
+					l 15
+					l:
+						l 9
+					:l
+					r 3
+					l:
+						m -1
+					:l
+					m +1
+					r 6
+					l:
+						r 9
+					:l
+					r 1
+					l:
+						m -1
+					:l
+					m +1
+					l 1
+				:l
+
+			:l
+			m +1
+			r 1
+			l:
+				m -1
+				l 1
+				l:
+					r 9
+				:l
+				l 8
+			:l
+			r 8
+		:l
+		l 9
+		l:
+			l 9
+		:l
+		r 4
+		l:
+			m -1
+		:l
+		l 3
+		m +5
+		l:
+			m -1
+			l:
+				m -1
+				r 9
+				m +1
+				l 9
+			:l
+			r 9
+		:l
+		r 5
+		m -1
+		r 25
+		r 2
+		m -1
+		l 6
+		l:
+			l 9
+		:l
+
+	:l
+	r 3
+:l

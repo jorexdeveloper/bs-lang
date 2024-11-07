@@ -15,8 +15,8 @@ Yup, that's what I thought, not even a clue! But I promise, stick with me long e
 
 BS is a programming language inspired by **brainfuck**. If you don't know what brainfuck is, you don't need to but here are some valuable resources to act as a remedy for curiousity:
 
-- [brainfuck Esolang](https://esolangs.org/wiki/Brainfuck)
-- [brainfuck Implementations](https://esolangs.org/wiki/Brainfuck_implementations)
+- [brainfuck Esolang](https://esolangs.org/wiki/brainfuck)
+- [brainfuck Implementations](https://esolangs.org/wiki/brainfuck_implementations)
 
 Since brainfuck is only composed of 8 symbols, it is actually pretty easy to make a programming language that extends and compiles to it.
 

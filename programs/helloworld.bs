@@ -1,0 +1,64 @@
+#!/usr/bin/env bs
+
+# Name      : helloworld
+# Author    : Jore
+# Purpose   : Print Hello World
+
+m +8
+l:
+	r 1
+	m +4
+	l:
+		r 1
+		m +2
+		r 1
+		m +3
+		r 1
+		m +3
+		r 1
+		m +1
+		l 4
+		m -1
+	:l
+	r 1
+	m +1
+	r 1
+	m +1
+	r 1
+	m -1
+	r 2
+	m +1
+	l:
+		l 1
+	:l
+	l 1
+	m -1
+:l
+r 2
+o 1
+r 1
+m -3
+o 1
+m +7
+o 2
+m +3
+o 1
+r 2
+o 1
+l 1
+m -1
+o 1
+l 1
+o 1
+m +3
+o 1
+m -6
+o 1
+m -8
+o 1
+r 2
+m +1
+o 1
+r 1
+m +2
+o 1

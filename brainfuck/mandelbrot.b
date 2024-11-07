@@ -1,4 +1,4 @@
-#!bf
+#!/usr/bin/env bf
 
 # Name      : mandelbrot
 # Author    : Erik Bosman

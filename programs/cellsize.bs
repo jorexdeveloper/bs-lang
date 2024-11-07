@@ -1,0 +1,158 @@
+#!/usr/bin/env bs
+
+# Name      : cellsize
+# Author    : brainfuck esolang
+# Purpose   : Print cell size used by compiler/interpreter
+
+m +8
+l:
+	r 1
+	m +8
+	l 1
+	m -1
+:l
+r 1
+l:
+	l 1
+	m +4
+	r 1
+	m -1
+:l
+m +1
+l 1
+l:
+	r 1
+	m -1
+	l 1
+	l:
+		r 1
+		m +4
+		l 1
+		m -1
+	:l
+	r 1
+	l:
+		l 1
+		m +8
+		r 1
+		m -1
+	:l
+	l 1
+	l:
+		r 1
+		m +8
+		l 1
+		m -1
+	:l
+	m +1
+	r 1
+	l:
+		r 1
+		m +10
+		l:
+			r 1
+			m +5
+			l 1
+			m -1
+		:l
+		r 1
+		m +1
+		o 1
+		m -1
+		o 1
+		l:
+			m -1
+		:l
+		l 2
+		l:
+			m -1
+		:l
+		l 1
+		m -1
+		r 1
+	:l
+	l 1
+	l:
+		r 2
+		m +7
+		l:
+			r 1
+			m +7
+			l 1
+			m -1
+		:l
+		r 1
+		o 1
+		m +5
+		o 1
+		l:
+			m -1
+		:l
+		l 3
+		m -1
+	:l
+
+:l
+r 1
+l:
+	r 1
+	m +8
+	l:
+		r 1
+		m +7
+		l 1
+		m -1
+	:l
+	r 1
+	o 1
+	l:
+		m -1
+	:l
+	l 2
+	m -1
+:l
+l 1
+m +11
+l:
+	r 1
+	m +3
+	r 1
+	m +9
+	r 1
+	m +9
+	r 1
+	m +1
+	l 4
+	m -1
+:l
+r 1
+m -1
+o 1
+r 1
+m -1
+o 1
+m +7
+o 1
+m +11
+o 1
+l 1
+o 1
+r 2
+o 1
+m +2
+o 1
+m +7
+o 2
+l 1
+m -1
+o 1
+r 2
+m -1
+o 1
+l:
+
+	l:
+		m -1
+	:l
+	l 1
+:l

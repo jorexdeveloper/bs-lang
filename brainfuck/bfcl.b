@@ -1,7 +1,12 @@
-#!bf
+!/usr/bin/env bf
+
+# Name      : bfcl
+# Author    : Ge Vissers
+# Purpose   : brainfuck compiler for Linux
+
 This is version 0_1 of bfcl
 
-bfcl is a BrainFuck compiler for Linux written itself in BrainFuck
+bfcl is a brainfuck compiler for Linux written itself in brainfuck
 It reads the input from stdin and outputs a Linux ELF binary on stdout
 Currently no optimization at all is done (which is another reason why
 this thing is so sloooooooow on my system :) but that is planned for
@@ -13,7 +18,7 @@ fields are one byte long and decreasing zero is possible
 Conventions in the binaries compiled with bfcl:
 a) fields are one byte long
 b) there are 30 000 fields
-c) moving the pointer outside this area will lead to your computer 
+c) moving the pointer outside this area will lead to your computer
    catching fire;
    nothing is done to prevent you from doing that however
 d) when end of file is encountered the program stores whatever
@@ -21,14 +26,14 @@ d) when end of file is encountered the program stores whatever
    check)
 e) No checks are made on matching parentheses; maybe for version 0_3 :)
 
-And yes; I know the code is far from pretty; far from optimized; and not 
-very well documented; but I'm sending it out anyway because the longer I 
+And yes; I know the code is far from pretty; far from optimized; and not
+very well documented; but I'm sending it out anyway because the longer I
 stare at it the more my head hurts
 
-Final word of thanks: many ideas are shamelessly stolen from Brian 
+Final word of thanks: many ideas are shamelessly stolen from Brian
 Raiter's 171 byte BF compiler available from www_muppetlabs_com/~breadbox/
 
-For questions and comments you can reach me at 
+For questions and comments you can reach me at
 vissers@theochem dot kun dot nl
 You will forgive me for not typing the dots :)
 
@@ -48,7 +53,7 @@ a) leave byte unchanged
 b) set byte to zero
 c) set byte to 0xff
 I *believe* the following code snippets catches all three possibilities above
-so that the program ends on either a null or a 0xff byte 
+so that the program ends on either a null or a 0xff byte
 
 >-                                    set character to 0xff
 ,                                     read a character
@@ -84,13 +89,13 @@ so that the program ends on either a null or a 0xff byte
           ]                           end if (char is not left angle)
           <+>                         increase opcode
         ]                             end if (char is not dot)
-        <+>                           increase opcode 
+        <+>                           increase opcode
       ]                               end if (char is not minus)
       <+>                             increase opcode
     ]                                 end if (char is not comma)
     <+>                               increase opcode
   ]                                   end if (char is not plus)
-  <+                                  increase opcode 
+  <+                                  increase opcode
   [                                   if opcode is not zero
     >                                 move to next field
   ]                                   end if (opcode is not zero)
@@ -219,7 +224,7 @@ Calculate file size
 <<<<<.>.>.>.                          this is file size
 
 Copy the file size since we need it to initialize ecx
->[-]>[-]<<                            clear the fields 
+>[-]>[-]<<                            clear the fields
 <<<[>>>>+>+<<<<<-]>>>>>[<<<<<+>>>>>-] copy the bytes
 <<<<[>>>>+>+<<<<<-]>>>>>[<<<<<+>>>>>-]
 <<<<[>>>>+>+<<<<<-]>>>>>[<<<<<+>>>>>-]
@@ -247,7 +252,7 @@ Start with 0x30
   >-                                  decrease increment
 ]
 <<<<<<.                               print first byte
-     
+
 Now do 0x75 00
 >>>>>>>
 +++++++[<++++++++++++++++>-]<+++++    set increment

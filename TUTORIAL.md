@@ -1,4 +1,4 @@
-<h1 align="center"> BrainFuck Programming Tutorial</h1>
+<h1 align="center"> brainfuck Programming Tutorial</h1>
 
 <h6 align="center">by Katie(edit)</h6>
 
@@ -10,7 +10,7 @@ brainfuck, language itself, is a _Turing-complete language_ created by Urban Mü
 
 To write programs in brainfuck, I would suggest you get a few things first.
 
-First of all you will need an interpreter or a compiler. An experienced programmer could easily write one quite quickly after reading this. If you don't quite know how to write one. I have included the source to a brainfuck-to-C interpreter that I wrote in C as well as one that I wrote in BrainFuck itself. Also I have included the source for the worlds smallest Compiler (171 bytes) written in x86 assembly by Brian Raiter. You'll find all those in the last section of this tutorial.
+First of all you will need an interpreter or a compiler. An experienced programmer could easily write one quite quickly after reading this. If you don't quite know how to write one. I have included the source to a brainfuck-to-C interpreter that I wrote in C as well as one that I wrote in brainfuck itself. Also I have included the source for the worlds smallest Compiler (171 bytes) written in x86 assembly by Brian Raiter. You'll find all those in the last section of this tutorial.
 
 Next, I would suggest an ASCII chart with all the characters and their decimal equivalent value.
 
@@ -378,7 +378,7 @@ if (x == 5) {
 }
 ```
 
-in BrainFuck:
+in brainfuck:
 
 ```bf
 ,[>>+>+<<<-]>>>[<<<+>>>-]>+<<[-----[>]>>[<<<+++>>>[-]]
@@ -463,17 +463,17 @@ Well I hope you enjoyed learning how to program in brainfuck as much as I did. T
 
 2. Write a program to print all printable ASCII characters.
 
-3. (From BrainFuck Golf) Write a program that will take a NULL ('\0') terminated string as input, and output source code for a BrainFuck program that when compiled and ran, will print the string input into the first program. (yes, this sounds like a doozy, but I've actually done this in 1 of code).
+3. (From brainfuck Golf) Write a program that will take a NULL ('\0') terminated string as input, and output source code for a brainfuck program that when compiled and ran, will print the string input into the first program. (yes, this sounds like a doozy, but I've actually done this in 1 of code).
 
-## BrainFuck-to-C interpreter
+## brainfuck-to-C interpreter
 
-Here is the source for a brainfuck to C interpretor and front end compiler written in C that I wrote when first learning the how to program in brainfuck. Or if you really would like to see something, below the C version is a BrainFuck to C interpretor that I wrote...in BrainFuck!
+Here is the source for a brainfuck to C interpretor and front end compiler written in C that I wrote when first learning the how to program in brainfuck. Or if you really would like to see something, below the C version is a brainfuck to C interpretor that I wrote...in brainfuck!
 
 ```c
 /*
  * obfc.c
  * The brainfuck compiler
- * A simple BrainFuck to C interpreter and Compiler.
+ * A simple brainfuck to C interpreter and Compiler.
  * This program is free software;
  */
 
@@ -661,7 +661,7 @@ void usage(char *argv[]) {
 }
 ```
 
-**Here is an interpreter that I wrote in BrainFuck**.
+**Here is an interpreter that I wrote in brainfuck**.
 
 ```bf
 [/* bf2c.b
@@ -712,7 +712,7 @@ void usage(char *argv[]) {
 +++.
 ```
 
-And lastly, here is a BrainFuck compiler written in x86 assembly by
+And lastly, here is a brainfuck compiler written in x86 assembly by
 Brian Raiter
 
 ```assembly
