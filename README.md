@@ -1,5 +1,20 @@
 <h1 align="center">The BS Programming Language</h1>
 
+<p align="center">
+	<a href="https://github.com/jorexdeveloper/bs-lang/stargazers">
+		<img
+			src="https://img.shields.io/github/stars/jorexdeveloper/bs-lang?colorA=23272a&colorB=007bff&style=for-the-badge">
+	</a>
+	<a href="https://github.com/jorexdeveloper/bs-lang/issues">
+		<img
+			src="https://img.shields.io/github/issues/jorexdeveloper/bs-lang?colorA=23272a&colorB=ff4500&style=for-the-badge">
+	</a>
+	<a href="https://github.com/jorexdeveloper/bs-lang/contributors">
+		<img
+			src="https://img.shields.io/github/contributors/jorexdeveloper/bs-lang?colorA=23272a&colorB=28a745&style=for-the-badge">
+	</a>
+</p>
+
 **Welcome to the hardest programming language of the modern age.**
 
 Don't believe me? Then try guessing what the code below does.
