@@ -1,6 +1,7 @@
 /*
- *	 bf2bs
- *	 Converts brainfuck to BS (BS decompiler).
+ *	 bf2bs-raw
+ *
+ *	 Converts brainfuck to BS (BS decompiler), but keeps comments.
  *
  *	 Copyright (C) 2024  Jore <https://github.com/jorexdeveloper>
  *
@@ -22,8 +23,12 @@
 
 int count(int);
 
+/*
+ * Main logic.
+ */
 int main() {
 	register int c = 0;
+
 	while ((c = getchar()) != EOF)
 		switch (c) {
 			case '+':
@@ -51,15 +56,20 @@ int main() {
 				printf(":l;");
 				continue;
 			default:
-				/* putchar(c); // Keep comments */
+				putchar(c);
 				continue;
 		}
 }
 
+/*
+ * Counts consecutive occurrencies of a character.
+ */
 int count(register int c) {
 	register int x, i;
+
 	for (x = i = 0; (x = getchar()) != EOF && x == c; i++);
+
 	ungetc(x, stdin);
-	printf("(%d)", i);
+
 	return i;
 }

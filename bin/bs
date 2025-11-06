@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Name      : BS Compiler
-# Purpose   : Compile BS language to brainfuck and execute it.
-# Author    : Jore
+# Purpose   : Compile BS code to brainfuck.
+# Author    : Jore <https://github.com/jorexdeveloper>
 
 #
 # COMMANDS
@@ -11,13 +11,13 @@
 # increment/decrement memory block
 # by arg
 m() {
-	if [ "${1}" -gt "0" ]; then
+	if [[ ${1} -gt 0 ]]; then
 		for ((i = ${1}; i > 0; i--)); do
-			echo -n '+'
+			printf '+'
 		done
-	elif [ "${1}" -lt "0" ]; then
+	elif [[ "${1}" -lt "0" ]]; then
 		for ((i = ${1}; i < 0; i++)); do
-			echo -n '-'
+			printf '-'
 		done
 	fi
 }
@@ -25,88 +25,82 @@ m() {
 # move right and increment/decrement
 # memory block block by arg
 rm() {
-	r
-	m "${@}"
+	r && m "${@}"
 }
 
 # move left and increment/decrement
 # memory block block by arg
 lm() {
-	l
-	m "${@}"
+	l && m "${@}"
 }
 
 # move pointer right arg blocks
 r() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n '>'
+		printf '>'
 	done
 }
 
 # move pointer left arg blocks
 l() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n '<'
+		printf '<'
 	done
 }
 
 # input character arg times
 i() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n ','
+		printf ','
 	done
 }
 
 # move right and input character arg times
 ri() {
-	r
-	i "${@}"
+	r && i "${@}"
 }
 
 # move right and input character arg times
 li() {
-	l
-	i "${@}"
+	l && i "${@}"
 }
 
 # print character arg times
 o() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n '.'
+		printf '.'
 	done
 }
 
 # move right and print character arg
 # times
 ro() {
-	r
-	o "${@}"
+	r && o "${@}"
 }
 
 # move right and print character arg
 # times
 lo() {
-	l
-	o "${@}"
+	l && o "${@}"
 }
 
 # Start loop n times
 l:() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n '['
+		printf '['
 	done
 }
 
 # End loop n times
 :l() {
-	[ -z "${1}" ] && set -- 1
+	[[ ! ${1} ]] && set -- 1
 	for ((i = ${1}; i > 0; i--)); do
-		echo -n ']'
+		printf ']'
 	done
 }
 
@@ -115,31 +109,27 @@ l:() {
 #
 
 compile() {
-	wrap=80
-	if [ -z "${1}" ]; then
+	local wrap=80
+	if [[ ! ${1} ]]; then
 		_usage
 	else
-		local file="${1%.bs}.b"
-		echo "#!/usr/bin/env bf" >"${file}"
-		source "${1}" | sed -e "s/\(.\{${wrap}\}\)/&\n/g" >>"${file}"
-		echo "@" >>"${file}"
-		chmod u+x "${file}"
-		echo "${file}"
+		local file
+		for file in "${@}"; do
+			file="${1%.bs}.b"
+			echo "#!/usr/bin/env bf" >"${file}"
+			# shellcheck disable=SC1090
+			source "${1}" | sed -e "s/\(.\{${wrap}\}\)/&\n/g" >>"${file}"
+			echo "@" >>"${file}"
+			chmod u+x "${file}"
+			echo "${file}"
+		done
 	fi
 }
 
 usage() {
-	echo "BS Compiler"
-	echo "Usage: $(basename "${0}") FILE"
+	echo "Compile BS Code."
+	echo "Usage: $(basename "${0}") FILE..."
 }
 
-#
-# ENTRY
-#
-
-if [ -x "$(command -v bf)" ]; then
-	bf "$(compile "${1}")"
-else
-	echo "No brainfuck interpreter (command 'bf') found! Will only compile."
-	compile "${1}"
-fi
+# Start
+compile "${@}"

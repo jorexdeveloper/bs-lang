@@ -1,5 +1,6 @@
 /*
  *	 bfmt
+ *
  *	 Formats brainfuck code.
  *
  *	 Copyright (C) 2024  Jore <https://github.com/jorexdeveloper>
@@ -28,8 +29,12 @@
 bool ischar(int);
 void indent(int);
 
+/*
+ * Main logic.
+ */
 int main(void) {
 	register int c, b, l, i;
+
 	c = b = l = i = 0;
 	while ((c = getchar()) != EOF) {
 		if (ischar(c)) {
@@ -69,9 +74,12 @@ int main(void) {
 			b = c;
 			continue;
 		}
+
 		putchar('\n');
+
 		if (l > 0)
 			indent(c == '[' ? l - 1 : l);
+
 		putchar(c);
 		putchar('\n');
 		b = c;
@@ -79,10 +87,16 @@ int main(void) {
 	}
 }
 
+/*
+ * Validates brainfuck character.
+ */
 bool ischar(int x) {
 	return (x == '+' || x == '-' || x == ',' || x == '.' || x == '<' || x == '>');
 }
 
+/*
+ * Prints indentation.
+ */
 void indent(int y) {
 	while (y > 0) {
 		putchar('\t');
