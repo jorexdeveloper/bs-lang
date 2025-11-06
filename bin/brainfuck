@@ -5,7 +5,7 @@
 # Author    : Jore <https://github.com/jorexdeveloper>
 
 declare -a MEMORY
-MAX_MEMORY=1000
+MAX_MEMORY=30000
 POINTER=0
 
 # Increment value at pointer
@@ -27,7 +27,7 @@ mor() {
 # Move pointer left
 mol() {
 	((POINTER--))
-	((POINTER < 0)) && err "Negative memory pointer at: ${POINTER}"
+	((POINTER < 0)) && err "Negative memory pointer at line: ${lines}, char: $((chars + 1))"
 }
 
 # Output char at pointer location
@@ -58,32 +58,36 @@ run() {
 	if [[ ${1} && -f ${1} ]]; then
 		local depth=0
 		local code=""
-		local i=0
+		chars=0
+		lines=0
 		exp
-		while read -r line || ((i < ${#code})); do
+		while read -r line || { ((chars < ${#code})) && end=1; }; do
 			[[ ${line} ]] && code+=${line}
-			case "${code:${i}:1}" in
+			case "${code:${chars}:1}" in
 				'[') ((MEMORY[POINTER] == 0)) && ((depth++)) ;;
 				']')
 					if ((depth > 0)); then
 						((depth--))
 					elif ((MEMORY[POINTER] != 0)); then
-						((i--))
-						while ((depth > 0)) || [[ "${code:${i}:1}" != '[' ]]; do
-							case "${code:${i}:1}" in
+						((chars--))
+						while ((depth > 0)) || [[ "${code:${chars}:1}" != '[' ]]; do
+							case "${code:${chars}:1}" in
 								'[') ((depth--)) ;;
 								']') ((depth++)) ;;
 							esac
-							((i--))
+							((chars--))
 						done
-						((i--))
+						((chars--))
 					fi
 					;;
-				'+' | '-' | '<' | '>' | '.' | ',') ((depth == 0)) && exe "${code:${i}:1}" ;;
+				'+' | '-' | '<' | '>' | '.' | ',') ((depth == 0)) && exe "${code:${chars}:1}" ;;
 			esac
-			((i++))
-			((i == ${#code})) && break
+			((chars++))
+			[[ ! ${end} ]] && ((lines++))
+			((chars == ${#code})) && break
 		done <"${1}"
+	else
+		usage
 	fi
 }
 
@@ -94,7 +98,8 @@ exp() {
 			MEMORY+=(0)
 		done
 	else
-		err "Out of memory at memory block: [${#MEMORY[@]}]."
+		# BUG: Chars not accurate
+		err "Out of memory at: line: ${lines}, char: $((chars + 1)), addr: ${#MEMORY[@]}"
 	fi
 }
 
@@ -114,6 +119,11 @@ prm() {
 err() {
 	echo "${1}"
 	exit 1
+}
+
+usage() {
+	echo "Excecute brainfuck code."
+	echo "Usage: $(basename "${0}") FILE"
 }
 
 # Start

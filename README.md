@@ -57,32 +57,35 @@ I might consider creating a language that compiles to BS in the future, when I g
 
 The BS language is compiled to brainfuck which can then be executed by any brainfuck interpreter/compiler.
 
-To start running your first program, you just need a few things first.
+### Requirements
 
-1. A text editor of your choice, where you will create and edit BS files.
+1. **Download the [latest release files](/ "Latest BS release files.")**, and extract them to any folder.
+
+2. **A text editor** of your choice, where you will create and edit BS files.
    BS source code files have an extension of `.bs` and BS compiled code files have an extension of `.b`.
 
-2. Next you will need to have a shell interpreter, (Bourne Again Shell recommended) where you will run the compiler. I have included one with this project but an experienced programmer can easily create one of their own.
+3. **Bourne Again Shell (Bash)** where you will run the included BS compiler.
+   I have included a BS compiler made in bash with this project but an experienced programmer can easily create one of their own.
 
-3. Then you will compile and run the code by following the steps below.
+4. **A brainfuck interpreter** of your choice that you will use to interpret the compiled code.
 
-[Download](https://raw.githubusercontent.com/jorexdeveloper/bs-lang/refs/heads/main/bin/bs "Latest BS compiler.") the compiler.
+### Compile
 
-Switch to the compiler directory and make it executable.
-
-```bash
-chmod u+x ./bs
-```
-
-Compile and execute BS code by invoking the compiler with the path to the BS file.
+**Compile** BS code by invoking the compiler with the path to the BS file.
 
 ```bash
-./bs <file name>
+./bin/bs programs/helloworld.bs
 ```
 
-You will notice an extra file in your working directory with the same name as the file you compiled, and a extension of `.b`. That's the compiled BS code.
+You will notice a new file with the same name as the file you compiled, and a file extension of `.b`. That's the compiled BS code.
 
-The compiler has an inbuilt brainfuck interpreter, but if it's slow, you are free to try other alternatives.
+### Excecute
+
+Now run the compiled code with one of the included brainfuck interpreters.
+
+```sh
+./bin/brainfuck programs/helloworld.b
+```
 
 ## Basic Syntax
 

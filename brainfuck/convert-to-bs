@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+cmd() {
+	for command in tr head sed bfstrip bfmt bf2bs-raw; do
+		if ! command -v "${command}" &>/dev/null; then
+			echo "${command} is required but not found!"
+			exit 1
+		fi
+	done
+}
+
+conv() {
+	local bs
+	# shellcheck disable=SC2155
+	local out=$(dirname "${0}")/../programs
+	mkdir -vp "${out}"
+	for bf in "${@}"; do
+		bs="${out}/$(basename "${bf%.b}").bs"
+		echo "'${bf}' -> '${bs}'"
+		sed -nE '1{s/env\sbf$/env bs/;N;p;n}; /^#.*$/{:a;N;s/(\n#[^\n]*$)/\1/;ta;p;q}' "${bf}"  >"${bs}"
+		bfstrip <"${bf}" | tr -d '@' | bfmt | bf2bs-raw | sed 's/;$//g' >>"${bs}"
+	done
+}
+
+if [[ ${#} -gt 0 ]] && cmd; then
+	conv "${@}"
+else
+	echo "Usage: ${0} FILE..."
+	echo "Convert brainfuck to bs."
+fi

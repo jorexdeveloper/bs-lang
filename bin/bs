@@ -110,24 +110,24 @@ l:() {
 
 compile() {
 	local wrap=80
-	if [[ ! ${1} ]]; then
-		_usage
-	else
-		local file
-		for file in "${@}"; do
-			file="${1%.bs}.b"
-			echo "#!/usr/bin/env bf" >"${file}"
+	if [[ ${1} && -f ${1} ]]; then
+		local bs bf
+		for bs in "${@}"; do
+			bf="${bs%.bs}.b"
 			# shellcheck disable=SC1090
-			source "${1}" | sed -e "s/\(.\{${wrap}\}\)/&\n/g" >>"${file}"
-			echo "@" >>"${file}"
-			chmod u+x "${file}"
-			echo "${file}"
+			echo "#!/usr/bin/env bf" >"${bf}" &&
+				source "${bs}" | sed -e "s/\(.\{${wrap}\}\)/&\n/g" >>"${bf}" &&
+				echo "@" >>"${bf}" &&
+				chmod u+x "${bf}" &&
+				echo "${bf}"
 		done
+	else
+		usage
 	fi
 }
 
 usage() {
-	echo "Compile BS Code."
+	echo "Compile BS code."
 	echo "Usage: $(basename "${0}") FILE..."
 }
 

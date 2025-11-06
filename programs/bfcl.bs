@@ -1,4 +1,4 @@
-!/usr/bin/env bs
+#!/usr/bin/env bs
 
 # Name      : bfcl
 # Author    : Ge Vissers
