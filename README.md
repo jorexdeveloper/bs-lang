@@ -224,7 +224,8 @@ Other possible combinations and their equivalents are shown below.
 | r; o 1       | ro 1            |
 | l; o 1       | lo 1            |
 
-Notice that the memory navigation characters appear first.
+> [!TIP]
+> Notice that the memory navigation characters appear first.
 
 ## Examples
 
@@ -326,3 +327,4 @@ rm +2; o                  # And finally a newline from cell 6
 ```
 
 I also highly recommend that you to remove just a few semi-colons and see what happens!
+If you feel like that was too easy, check out more complex BS examples [here](./programs "More BS examples."), some of which I just had to decompile some open source brainfuck programs from different sources.

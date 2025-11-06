@@ -4,7 +4,7 @@
 # Author    : Erik Bosman
 # Purpose   : A mandelbrot set fractal viewer
 
-m +13
+m +5; m +5; m +3
 l:
 	m -1
 	r 1
@@ -15,63 +15,63 @@ l:
 	m +2
 	r 1
 	m +1
-	l 6
+	l 5; l 1
 :l
 r 5
-m +6
+m +5; m +1
 r 1
 m -3
-r 10
-m +15
+r 5; r 5
+m +5; m +5; m +5
 l:
 
 	l:
-		r 9
+		r 5; r 4
 	:l
 	m +1
 	l:
-		l 9
+		l 5; l 4
 	:l
-	r 9
+	r 5; r 4
 	m -1
 :l
 m +1
 l:
-	r 8
+	r 5; r 3
 	l:
 		m -1
 	:l
 	r 1
 :l
-l 9
+l 5; l 4
 l:
-	l 9
+	l 5; l 4
 :l
-r 8
+r 5; r 3
 l:
 	m -1
 :l
 m +1
-l 7
+l 5; l 2
 m +5
 l:
 	m -1
 	l:
 		m -1
-		r 9
+		r 5; r 4
 		m +1
-		l 9
+		l 5; l 4
 	:l
-	r 9
+	r 5; r 4
 :l
-r 7
+r 5; r 2
 m +1
-r 25
+r 5; r 5; r 5; r 5; r 5
 r 2
 m +1
-l 17
+l 5; l 5; l 5; l 2
 l:
-	l 9
+	l 5; l 4
 :l
 r 3
 l:
@@ -79,54 +79,54 @@ l:
 :l
 m +1
 l:
-	r 6
+	r 5; r 1
 	l:
-		r 7
+		r 5; r 2
 		l:
 			m -1
 		:l
 		r 2
 	:l
-	l 9
+	l 5; l 4
 	l:
-		l 9
+		l 5; l 4
 	:l
-	r 7
+	r 5; r 2
 	l:
 		m -1
 	:l
 	m +1
-	l 6
+	l 5; l 1
 	m +4
 	l:
 		m -1
 		l:
 			m -1
-			r 9
+			r 5; r 4
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 	:l
-	r 6
+	r 5; r 1
 	m +1
-	l 6
-	m +7
+	l 5; l 1
+	m +5; m +2
 	l:
 		m -1
 		l:
 			m -1
-			r 9
+			r 5; r 4
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 	:l
-	r 6
+	r 5; r 1
 	m +1
-	l 16
+	l 5; l 5; l 5; l 1
 	l:
-		l 9
+		l 5; l 4
 	:l
 	r 3
 	l:
@@ -134,19 +134,19 @@ l:
 		l:
 			m -1
 		:l
-		r 6
+		r 5; r 1
 		l:
-			r 7
+			r 5; r 2
 			l:
 				m -1
-				l 6
+				l 5; l 1
 				m +1
-				r 6
+				r 5; r 1
 			:l
-			l 6
+			l 5; l 1
 			l:
 				m -1
-				r 6
+				r 5; r 1
 				m +1
 				l 2
 				m +1
@@ -154,25 +154,25 @@ l:
 				m +1
 				l 1
 			:l
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
-			r 8
+			r 5; r 3
 			l:
 				m -1
-				l 7
+				l 5; l 2
 				m +1
-				r 7
+				r 5; r 2
 			:l
-			l 7
+			l 5; l 2
 			l:
 				m -1
-				r 7
+				r 5; r 2
 				m +1
 				l 2
 				m +1
@@ -180,34 +180,34 @@ l:
 				m +1
 				l 2
 			:l
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 7
+		r 5; r 2
 		l:
 			m -1
-			l 7
+			l 5; l 2
 			m +1
-			r 7
+			r 5; r 2
 		:l
-		l 7
+		l 5; l 2
 		l:
 			m -1
-			r 7
+			r 5; r 2
 			m +1
 			l 2
 			m +1
 			l 5
 		:l
-		r 9
-		m +15
+		r 5; r 4
+		m +5; m +5; m +5
 		l:
 
 			l:
-				r 9
+				r 5; r 4
 			:l
 			m +1
 			r 1
@@ -246,24 +246,24 @@ l:
 			l:
 				m -1
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			m -1
 		:l
 		m +1
 		l:
 			r 1
 			m +1
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 1
 			m -1
@@ -299,41 +299,41 @@ l:
 						l 4
 					:l
 					m +1
-					r 9
+					r 5; r 4
 				:l
-				l 8
+				l 5; l 3
 				l:
-					l 9
+					l 5; l 4
 				:l
 
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 9
+				r 5; r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
-				l 10
+				l 5; l 5
 			:l
 			r 1
 			l:
 				m -1
-				r 9
+				r 5; r 4
 				m +1
-				l 9
+				l 5; l 4
 			:l
 			l 1
 			m +1
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
 			r 1
 			l:
@@ -352,9 +352,9 @@ l:
 					m -1
 					r 1
 					m -1
-					l 6
+					l 5; l 1
 					m +1
-					r 6
+					r 5; r 1
 				:l
 				l 1
 				l:
@@ -374,19 +374,19 @@ l:
 			:l
 			l 1
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 1
 			m +1
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 1
 			m -1
@@ -402,7 +402,7 @@ l:
 				m -1
 				r 5
 				m +1
-				l 6
+				l 5; l 1
 				l:
 					m -1
 					r 3
@@ -422,41 +422,41 @@ l:
 						l 4
 					:l
 					m +1
-					r 9
+					r 5; r 4
 				:l
-				l 8
+				l 5; l 3
 				l:
-					l 9
+					l 5; l 4
 				:l
 
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 9
+				r 5; r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 2
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
-				l 11
+				l 5; l 5; l 1
 			:l
 			r 2
 			l:
 				m -1
-				r 9
+				r 5; r 4
 				m +1
-				l 9
+				l 5; l 4
 			:l
 			l 2
 			m +1
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
 			r 1
 			l:
@@ -475,9 +475,9 @@ l:
 					m -1
 					r 1
 					m -1
-					l 6
+					l 5; l 1
 					m +1
-					r 6
+					r 5; r 1
 				:l
 				l 1
 				l:
@@ -497,49 +497,49 @@ l:
 			:l
 			l 1
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 4
 			l:
 				m -1
-				l 25
-				l 11
+				l 5; l 5; l 5; l 5; l 5
+				l 5; l 5; l 1
 				m +1
-				r 25
-				r 11
+				r 5; r 5; r 5; r 5; r 5
+				r 5; r 5; r 1
 			:l
 			r 5
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
-		m +15
+		r 5; r 4
+		m +5; m +5; m +5
 		l:
 
 			l:
-				r 9
+				r 5; r 4
 			:l
-			l 9
+			l 5; l 4
 			m -1
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			m -1
 		:l
 		m +1
-		r 21
+		r 5; r 5; r 5; r 5; r 1
 		m +1
 		l 3
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 3
 			l:
@@ -566,9 +566,9 @@ l:
 					m -1
 					r 4
 					m +1
-					l 13
+					l 5; l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 					r 4
 					l:
@@ -577,7 +577,7 @@ l:
 					m +1
 					r 5
 					l:
-						r 9
+						r 5; r 4
 					:l
 					r 1
 					m +1
@@ -611,18 +611,18 @@ l:
 					m -1
 					r 3
 					m +1
-					l 12
+					l 5; l 5; l 2
 					l:
-						l 9
+						l 5; l 4
 					:l
 					r 3
 					l:
 						m -1
 					:l
 					m +1
-					r 6
+					r 5; r 1
 					l:
-						r 9
+						r 5; r 4
 					:l
 					r 1
 					l:
@@ -639,17 +639,17 @@ l:
 				m -1
 				l 1
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 8
+				l 5; l 3
 			:l
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		l 7
+		l 5; l 2
 		l:
 			m -1
 			r 1
@@ -658,8 +658,8 @@ l:
 			m -1
 			l 4
 		:l
-		r 9
-		m +25
+		r 5; r 4
+		m +5; m +5; m +5; m +5; m +5
 		m +1
 		r 2
 		l:
@@ -681,7 +681,7 @@ l:
 		:l
 		r 2
 		l:
-			l 7
+			l 5; l 2
 			m +1
 			l 1
 			l:
@@ -710,7 +710,7 @@ l:
 				:l
 				r 3
 			:l
-			r 13
+			r 5; r 5; r 3
 			l:
 				r 2
 				l:
@@ -726,15 +726,15 @@ l:
 				:l
 				r 5
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 3
 			l:
 				m -1
 			:l
-			r 6
+			r 5; r 1
 			l:
 				r 5
 				l:
@@ -752,33 +752,33 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 2
 				l:
 					m -1
-					l 9
+					l 5; l 4
 					m +1
-					r 9
+					r 5; r 4
 				:l
-				r 7
+				r 5; r 2
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
-			m +15
+			r 5; r 4
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
 				m +1
 				r 1
@@ -817,24 +817,24 @@ l:
 				l:
 					m -1
 				:l
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
 			l:
 				r 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m -1
@@ -850,7 +850,7 @@ l:
 					m -1
 					r 5
 					m +1
-					l 6
+					l 5; l 1
 					l:
 						m -1
 						r 2
@@ -870,41 +870,41 @@ l:
 							l 3
 						:l
 						m +1
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
 						m -1
-						r 9
+						r 5; r 4
 						m +1
-						l 9
+						l 5; l 4
 					:l
-					l 10
+					l 5; l 5
 				:l
 				r 1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
 				l 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -923,9 +923,9 @@ l:
 						m -1
 						r 1
 						m -1
-						l 7
+						l 5; l 2
 						m +1
-						r 7
+						r 5; r 2
 					:l
 					l 1
 					l:
@@ -945,11 +945,11 @@ l:
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 6
+				r 5; r 1
 				l:
 					m -1
 					l 5
@@ -965,23 +965,23 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m -1
@@ -997,7 +997,7 @@ l:
 					m -1
 					r 5
 					m +1
-					l 6
+					l 5; l 1
 					l:
 						m -1
 						r 2
@@ -1017,41 +1017,41 @@ l:
 							l 4
 						:l
 						m +1
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
 						m -1
-						r 9
+						r 5; r 4
 						m +1
-						l 9
+						l 5; l 4
 					:l
-					l 10
+					l 5; l 5
 				:l
 				r 1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
 				l 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -1070,9 +1070,9 @@ l:
 						m -1
 						r 1
 						m -1
-						l 6
+						l 5; l 1
 						m +1
-						r 6
+						r 5; r 1
 					:l
 					l 1
 					l:
@@ -1092,93 +1092,93 @@ l:
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 4
 				l:
 					m -1
-					l 25
-					l 11
+					l 5; l 5; l 5; l 5; l 5
+					l 5; l 5; l 1
 					m +1
-					r 25
-					r 11
+					r 5; r 5; r 5; r 5; r 5
+					r 5; r 5; r 1
 				:l
 				r 5
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 3
 				l:
 					m -1
-					l 25
-					l 11
+					l 5; l 5; l 5; l 5; l 5
+					l 5; l 5; l 1
 					m +1
-					r 25
-					r 11
+					r 5; r 5; r 5; r 5; r 5
+					r 5; r 5; r 1
 				:l
-				r 6
+				r 5; r 1
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
-			m +15
+			r 5; r 4
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				m -1
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
 			l:
-				r 8
+				r 5; r 3
 				l:
 					m -1
-					l 7
+					l 5; l 2
 					m +1
-					r 7
+					r 5; r 2
 				:l
-				l 7
+				l 5; l 2
 				l:
 					m -1
-					r 7
+					r 5; r 2
 					m +1
-					l 6
+					l 5; l 1
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 6
+				r 5; r 1
 				l:
 					m -1
 				:l
 				r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 4
 			m +1
@@ -1194,7 +1194,7 @@ l:
 			r 1
 			l:
 				m -1
-				l 6
+				l 5; l 1
 				l:
 					m -1
 					r 5
@@ -1230,11 +1230,11 @@ l:
 				m +1
 				l 5
 			:l
-			r 6
+			r 5; r 1
 			l:
 				m -1
 			:l
-			l 6
+			l 5; l 1
 			m +1
 			r 4
 			l:
@@ -1276,18 +1276,18 @@ l:
 							m -1
 							r 3
 							m +1
-							l 12
+							l 5; l 5; l 2
 							l:
-								l 9
+								l 5; l 4
 							:l
 							r 3
 							l:
 								m -1
 							:l
 							m +1
-							r 6
+							r 5; r 1
 							l:
-								r 9
+								r 5; r 4
 							:l
 							r 1
 							m +1
@@ -1321,9 +1321,9 @@ l:
 							m -1
 							r 2
 							m +1
-							l 11
+							l 5; l 5; l 1
 							l:
-								l 9
+								l 5; l 4
 							:l
 							r 4
 							l:
@@ -1332,7 +1332,7 @@ l:
 							m +1
 							r 5
 							l:
-								r 9
+								r 5; r 4
 							:l
 							r 1
 							l:
@@ -1349,15 +1349,15 @@ l:
 						m -1
 						l 1
 						l:
-							r 9
+							r 5; r 4
 						:l
-						l 8
+						l 5; l 3
 					:l
-					r 8
+					r 5; r 3
 				:l
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
 				r 4
 				l:
@@ -1389,9 +1389,9 @@ l:
 							m +1
 							l 2
 						:l
-						r 8
+						r 5; r 3
 					:l
-					l 8
+					l 5; l 3
 					m +1
 					l 1
 					l:
@@ -1405,9 +1405,9 @@ l:
 								m -1
 								r 4
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 11
+								r 5; r 5; r 1
 								l:
 									m -1
 									r 3
@@ -1421,9 +1421,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 11
+								r 5; r 5; r 1
 							:l
 							l 2
 						:l
@@ -1437,9 +1437,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 11
+								r 5; r 5; r 1
 							:l
 							l 1
 						:l
@@ -1450,7 +1450,7 @@ l:
 							m +1
 							l 3
 						:l
-						l 12
+						l 5; l 5; l 2
 					:l
 					r 4
 					l:
@@ -1470,7 +1470,7 @@ l:
 					m -1
 					r 3
 					m +1
-					r 6
+					r 5; r 1
 					l:
 						r 1
 						m +1
@@ -1488,9 +1488,9 @@ l:
 							m +1
 							l 1
 						:l
-						r 8
+						r 5; r 3
 					:l
-					l 8
+					l 5; l 3
 					m +1
 					l 1
 					l:
@@ -1504,9 +1504,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 10
+								r 5; r 5
 								l:
 									m -1
 									r 4
@@ -1520,9 +1520,9 @@ l:
 								m -1
 								r 4
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 10
+								r 5; r 5
 							:l
 							l 1
 						:l
@@ -1536,9 +1536,9 @@ l:
 								m -1
 								r 4
 								m -1
-								l 14
+								l 5; l 5; l 4
 								m +1
-								r 10
+								r 5; r 5
 							:l
 							r 1
 						:l
@@ -1549,11 +1549,11 @@ l:
 							m +1
 							l 4
 						:l
-						l 11
+						l 5; l 5; l 1
 					:l
-					r 6
+					r 5; r 1
 					m +1
-					l 6
+					l 5; l 1
 				:l
 
 			:l
@@ -1571,9 +1571,9 @@ l:
 				m +1
 				r 5
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
@@ -1585,9 +1585,9 @@ l:
 							m -1
 							r 4
 							m -1
-							l 14
+							l 5; l 5; l 4
 							m +1
-							r 11
+							r 5; r 5; r 1
 							l:
 								m -1
 								r 3
@@ -1601,9 +1601,9 @@ l:
 							m -1
 							r 3
 							m -1
-							l 14
+							l 5; l 5; l 4
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						l 2
 					:l
@@ -1617,9 +1617,9 @@ l:
 							m -1
 							r 3
 							m -1
-							l 14
+							l 5; l 5; l 4
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						l 1
 					:l
@@ -1630,7 +1630,7 @@ l:
 						m +1
 						l 3
 					:l
-					l 12
+					l 5; l 5; l 2
 				:l
 
 			:l
@@ -1656,13 +1656,13 @@ l:
 				l:
 					m -1
 				:l
-				r 6
+				r 5; r 1
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 5
 				l:
@@ -1680,18 +1680,18 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
-			m +15
+			r 5; r 4
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
 				m +1
 				r 1
@@ -1730,24 +1730,24 @@ l:
 				l:
 					m -1
 				:l
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
 			l:
 				r 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m -1
@@ -1783,41 +1783,41 @@ l:
 							l 3
 						:l
 						m +1
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
 						m -1
-						r 9
+						r 5; r 4
 						m +1
-						l 9
+						l 5; l 4
 					:l
-					l 10
+					l 5; l 5
 				:l
 				r 1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
 				l 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -1836,9 +1836,9 @@ l:
 						m -1
 						r 1
 						m -1
-						l 7
+						l 5; l 2
 						m +1
-						r 7
+						r 5; r 2
 					:l
 					l 1
 					l:
@@ -1858,43 +1858,43 @@ l:
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 3
 				l:
 					m -1
-					l 25
-					l 11
+					l 5; l 5; l 5; l 5; l 5
+					l 5; l 5; l 1
 					m +1
-					r 25
-					r 11
+					r 5; r 5; r 5; r 5; r 5
+					r 5; r 5; r 1
 				:l
-				r 6
+				r 5; r 1
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 5
 			l:
 				m -1
 			:l
 			r 4
-			m +15
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				m -1
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
@@ -1924,9 +1924,9 @@ l:
 						m -1
 						r 4
 						m +1
-						l 13
+						l 5; l 5; l 3
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 4
 						l:
@@ -1935,7 +1935,7 @@ l:
 						m +1
 						r 5
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						m +1
@@ -1969,18 +1969,18 @@ l:
 						m -1
 						r 3
 						m +1
-						l 12
+						l 5; l 5; l 2
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 3
 						l:
 							m -1
 						:l
 						m +1
-						r 6
+						r 5; r 1
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						l:
@@ -1997,15 +1997,15 @@ l:
 					m -1
 					l 1
 					l:
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 3
 			l:
@@ -2019,7 +2019,7 @@ l:
 				m -1
 				r 3
 				m +1
-				r 6
+				r 5; r 1
 				l:
 					r 1
 					m +1
@@ -2037,9 +2037,9 @@ l:
 						m +1
 						l 3
 					:l
-					r 8
+					r 5; r 3
 				:l
-				l 8
+				l 5; l 3
 				m +1
 				l 1
 				l:
@@ -2053,9 +2053,9 @@ l:
 							m -1
 							l 1
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 12
+							r 5; r 5; r 2
 							l:
 								m -1
 								l 2
@@ -2069,9 +2069,9 @@ l:
 							m -1
 							l 2
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 12
+							r 5; r 5; r 2
 						:l
 						l 3
 					:l
@@ -2085,9 +2085,9 @@ l:
 							m -1
 							l 2
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 12
+							r 5; r 5; r 2
 						:l
 						l 1
 					:l
@@ -2098,7 +2098,7 @@ l:
 						m +1
 						r 2
 					:l
-					l 13
+					l 5; l 5; l 3
 				:l
 
 			:l
@@ -2132,9 +2132,9 @@ l:
 						m +1
 						l 2
 					:l
-					r 8
+					r 5; r 3
 				:l
-				l 8
+				l 5; l 3
 				m +1
 				l 1
 				l:
@@ -2148,9 +2148,9 @@ l:
 							m -1
 							l 2
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 11
+							r 5; r 5; r 1
 							l:
 								m -1
 								l 1
@@ -2164,9 +2164,9 @@ l:
 							m -1
 							l 1
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						l 2
 					:l
@@ -2180,9 +2180,9 @@ l:
 							m -1
 							l 1
 							m -1
-							l 10
+							l 5; l 5
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						r 1
 					:l
@@ -2193,13 +2193,13 @@ l:
 						m +1
 						r 1
 					:l
-					l 12
+					l 5; l 5; l 2
 				:l
 				r 5
 				m +1
 				l 5
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 3
 				l:
@@ -2215,9 +2215,9 @@ l:
 				:l
 				r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 3
 			l:
@@ -2229,27 +2229,27 @@ l:
 			:l
 			r 5
 			l:
-				r 7
+				r 5; r 2
 				l:
 					m -1
-					l 6
+					l 5; l 1
 					m +1
-					r 6
+					r 5; r 1
 				:l
-				l 6
+				l 5; l 1
 				l:
 					m -1
-					r 6
+					r 5; r 1
 					m +1
 					l 4
 					m +1
 					l 2
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 4
 			m +1
@@ -2265,7 +2265,7 @@ l:
 			r 2
 			l:
 				m -1
-				l 7
+				l 5; l 2
 				l:
 					m -1
 					r 5
@@ -2342,9 +2342,9 @@ l:
 							m -1
 							r 2
 							m +1
-							l 11
+							l 5; l 5; l 1
 							l:
-								l 9
+								l 5; l 4
 							:l
 							r 4
 							l:
@@ -2353,7 +2353,7 @@ l:
 							m +1
 							r 5
 							l:
-								r 9
+								r 5; r 4
 							:l
 							r 1
 							m +1
@@ -2387,18 +2387,18 @@ l:
 							m -1
 							r 3
 							m +1
-							l 12
+							l 5; l 5; l 2
 							l:
-								l 9
+								l 5; l 4
 							:l
 							r 3
 							l:
 								m -1
 							:l
 							m +1
-							r 6
+							r 5; r 1
 							l:
-								r 9
+								r 5; r 4
 							:l
 							r 1
 							l:
@@ -2415,15 +2415,15 @@ l:
 						m -1
 						l 1
 						l:
-							r 9
+							r 5; r 4
 						:l
-						l 8
+						l 5; l 3
 					:l
-					r 8
+					r 5; r 3
 				:l
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
 				r 3
 				l:
@@ -2437,7 +2437,7 @@ l:
 					m -1
 					r 3
 					m +1
-					r 6
+					r 5; r 1
 					l:
 						r 1
 						m +1
@@ -2455,9 +2455,9 @@ l:
 							m +1
 							l 1
 						:l
-						r 8
+						r 5; r 3
 					:l
-					l 8
+					l 5; l 3
 					m +1
 					l 1
 					l:
@@ -2471,9 +2471,9 @@ l:
 								m -1
 								r 2
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 10
+								r 5; r 5
 								l:
 									m -1
 									r 3
@@ -2487,9 +2487,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 10
+								r 5; r 5
 							:l
 							l 1
 						:l
@@ -2503,9 +2503,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 10
+								r 5; r 5
 							:l
 							r 1
 						:l
@@ -2516,7 +2516,7 @@ l:
 							m +1
 							l 3
 						:l
-						l 11
+						l 5; l 5; l 1
 					:l
 					r 5
 					l:
@@ -2525,14 +2525,14 @@ l:
 					r 2
 					l:
 						m -1
-						l 7
+						l 5; l 2
 						m +1
-						r 7
+						r 5; r 2
 					:l
-					l 7
+					l 5; l 2
 					l:
 						m -1
-						r 7
+						r 5; r 2
 						m +1
 						l 2
 						m +1
@@ -2570,9 +2570,9 @@ l:
 							m +1
 							l 2
 						:l
-						r 8
+						r 5; r 3
 					:l
-					l 8
+					l 5; l 3
 					m +1
 					l 1
 					l:
@@ -2586,9 +2586,9 @@ l:
 								m -1
 								r 3
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 11
+								r 5; r 5; r 1
 								l:
 									m -1
 									r 2
@@ -2602,9 +2602,9 @@ l:
 								m -1
 								r 2
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 11
+								r 5; r 5; r 1
 							:l
 							l 2
 						:l
@@ -2618,9 +2618,9 @@ l:
 								m -1
 								r 2
 								m -1
-								l 13
+								l 5; l 5; l 3
 								m +1
-								r 11
+								r 5; r 5; r 1
 							:l
 							l 1
 						:l
@@ -2631,7 +2631,7 @@ l:
 							m +1
 							l 2
 						:l
-						l 12
+						l 5; l 5; l 2
 					:l
 
 				:l
@@ -2660,24 +2660,24 @@ l:
 				r 2
 				l:
 					m -1
-					l 7
+					l 5; l 2
 					m +1
-					r 7
+					r 5; r 2
 				:l
-				l 7
+				l 5; l 2
 				l:
 					m -1
-					r 7
+					r 5; r 2
 					m +1
 					l 2
 					m +1
 					l 5
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
@@ -2689,9 +2689,9 @@ l:
 							m -1
 							r 3
 							m -1
-							l 13
+							l 5; l 5; l 3
 							m +1
-							r 11
+							r 5; r 5; r 1
 							l:
 								m -1
 								r 2
@@ -2705,9 +2705,9 @@ l:
 							m -1
 							r 2
 							m -1
-							l 13
+							l 5; l 5; l 3
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						l 2
 					:l
@@ -2721,9 +2721,9 @@ l:
 							m -1
 							r 2
 							m -1
-							l 13
+							l 5; l 5; l 3
 							m +1
-							r 11
+							r 5; r 5; r 1
 						:l
 						l 1
 					:l
@@ -2734,11 +2734,11 @@ l:
 						m +1
 						l 2
 					:l
-					l 12
+					l 5; l 5; l 2
 				:l
 
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 2
 				l:
@@ -2748,11 +2748,11 @@ l:
 				l:
 					m -1
 				:l
-				r 6
+				r 5; r 1
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 3
 			l:
@@ -2780,15 +2780,15 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 6
+				r 5; r 1
 				l:
 					m -1
 					l 5
@@ -2804,18 +2804,18 @@ l:
 					m +1
 					l 2
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
-			m +15
+			r 5; r 4
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
 				m +1
 				r 1
@@ -2854,24 +2854,24 @@ l:
 				l:
 					m -1
 				:l
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
 			l:
 				r 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m -1
@@ -2907,41 +2907,41 @@ l:
 							l 4
 						:l
 						m +1
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 1
 					l:
 						m -1
-						r 9
+						r 5; r 4
 						m +1
-						l 9
+						l 5; l 4
 					:l
-					l 10
+					l 5; l 5
 				:l
 				r 1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
 				l 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -2960,9 +2960,9 @@ l:
 						m -1
 						r 1
 						m -1
-						l 6
+						l 5; l 1
 						m +1
-						r 6
+						r 5; r 1
 					:l
 					l 1
 					l:
@@ -2982,19 +2982,19 @@ l:
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 1
 				m -1
@@ -3010,7 +3010,7 @@ l:
 					m -1
 					r 5
 					m +1
-					l 6
+					l 5; l 1
 					l:
 						m -1
 						r 3
@@ -3030,41 +3030,41 @@ l:
 							l 4
 						:l
 						m +1
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 					l:
-						l 9
+						l 5; l 4
 					:l
 
 				:l
-				r 9
+				r 5; r 4
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				l:
 					r 2
 					l:
 						m -1
-						r 9
+						r 5; r 4
 						m +1
-						l 9
+						l 5; l 4
 					:l
-					l 11
+					l 5; l 5; l 1
 				:l
 				r 2
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
 				l 2
 				m +1
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -3083,9 +3083,9 @@ l:
 						m -1
 						r 1
 						m -1
-						l 6
+						l 5; l 1
 						m +1
-						r 6
+						r 5; r 1
 					:l
 					l 1
 					l:
@@ -3105,49 +3105,49 @@ l:
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 4
 				l:
 					m -1
-					l 25
-					l 11
+					l 5; l 5; l 5; l 5; l 5
+					l 5; l 5; l 1
 					m +1
-					r 25
-					r 11
+					r 5; r 5; r 5; r 5; r 5
+					r 5; r 5; r 1
 				:l
 				r 5
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
-			m +15
+			r 5; r 4
+			m +5; m +5; m +5
 			l:
 
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 9
+				l 5; l 4
 				m -1
-				l 9
+				l 5; l 4
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 				m -1
 			:l
 			m +1
-			r 21
+			r 5; r 5; r 5; r 5; r 1
 			m +1
 			l 3
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 3
 				l:
@@ -3174,9 +3174,9 @@ l:
 						m -1
 						r 4
 						m +1
-						l 13
+						l 5; l 5; l 3
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 4
 						l:
@@ -3185,7 +3185,7 @@ l:
 						m +1
 						r 5
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						m +1
@@ -3219,18 +3219,18 @@ l:
 						m -1
 						r 3
 						m +1
-						l 12
+						l 5; l 5; l 2
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 3
 						l:
 							m -1
 						:l
 						m +1
-						r 6
+						r 5; r 1
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						l:
@@ -3247,15 +3247,15 @@ l:
 					m -1
 					l 1
 					l:
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 2
 			m -1
@@ -3294,16 +3294,16 @@ l:
 			m -1
 			r 4
 			m -1
-			l 6
+			l 5; l 1
 			o 1
 			r 2
 		:l
 		r 4
 		l:
 			m -1
-			l 7
+			l 5; l 2
 			o 1
-			r 7
+			r 5; r 2
 		:l
 		l 3
 		l:
@@ -3357,11 +3357,11 @@ l:
 			:l
 			r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
 			r 5
 			l:
@@ -3369,89 +3369,89 @@ l:
 			:l
 			r 4
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
 		r 1
-		m +11
+		m +5; m +5; m +1
 		l:
 			m -1
 			l:
 				m -1
-				r 9
+				r 5; r 4
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 		:l
 		r 4
 		m +1
-		r 9
+		r 5; r 4
 		m +1
-		l 14
+		l 5; l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 7
+		r 5; r 2
 		l:
 			m -1
-			l 7
+			l 5; l 2
 			m +1
-			r 7
+			r 5; r 2
 		:l
-		l 7
+		l 5; l 2
 		l:
 			m -1
-			r 7
+			r 5; r 2
 			m +1
 			l:
 				m -1
 			:l
 			r 2
 			l:
-				r 9
+				r 5; r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
-				r 7
+				r 5; r 2
 				l:
 					m -1
-					l 6
+					l 5; l 1
 					m +1
-					r 6
+					r 5; r 1
 				:l
-				l 6
+				l 5; l 1
 				l:
 					m -1
-					r 6
+					r 5; r 1
 					m +1
-					l 7
+					l 5; l 2
 					l:
-						l 9
+						l 5; l 4
 					:l
-					r 7
+					r 5; r 2
 					l:
 						m -1
 					:l
 					m +1
 					r 3
 				:l
-				l 10
+				l 5; l 5
 			:l
 
 		:l
-		r 7
+		r 5; r 2
 		l:
 			m -1
-			l 7
+			l 5; l 2
 			m +1
-			r 7
+			r 5; r 2
 		:l
-		l 7
+		l 5; l 2
 		l:
 			m -1
-			r 7
+			r 5; r 2
 			m +1
 			r 2
 			l:
@@ -3471,11 +3471,11 @@ l:
 					m +1
 					l 4
 				:l
-				r 8
+				r 5; r 3
 			:l
 			l 2
 			m +1
-			l 7
+			l 5; l 2
 			l:
 				r 5
 				l:
@@ -3484,13 +3484,13 @@ l:
 					m +1
 					l 2
 				:l
-				l 14
+				l 5; l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
-				r 9
+				r 5; r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -3498,10 +3498,10 @@ l:
 				:l
 				l 1
 				m -1
-				r 7
+				r 5; r 2
 				l:
 					m -1
-					l 7
+					l 5; l 2
 					m +1
 					r 1
 					l:
@@ -3520,20 +3520,20 @@ l:
 						m +1
 						l 1
 					:l
-					r 7
+					r 5; r 2
 				:l
-				l 6
+				l 5; l 1
 				l:
 					m -1
-					r 6
+					r 5; r 1
 					m +1
-					l 6
+					l 5; l 1
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 7
+			r 5; r 2
 			m -1
 			l 4
 			l:
@@ -3543,18 +3543,18 @@ l:
 			l 3
 		:l
 		m +1
-		r 7
+		r 5; r 2
 		l:
 			m -1
-			l 7
+			l 5; l 2
 			m -1
-			r 7
+			r 5; r 2
 		:l
 		m +1
-		l 7
+		l 5; l 2
 		l:
 			m -1
-			r 7
+			r 5; r 2
 			m -1
 			r 2
 			l:
@@ -3567,7 +3567,7 @@ l:
 				:l
 				r 4
 			:l
-			l 9
+			l 5; l 4
 			l:
 				r 1
 				l:
@@ -3575,10 +3575,10 @@ l:
 				:l
 				l 1
 				m -1
-				r 7
+				r 5; r 2
 				l:
 					m -1
-					l 7
+					l 5; l 2
 					m +1
 					r 1
 					l:
@@ -3597,18 +3597,18 @@ l:
 						m +1
 						l 1
 					:l
-					r 7
+					r 5; r 2
 				:l
-				l 6
+				l 5; l 1
 				l:
 					m -1
-					r 6
+					r 5; r 1
 					m +1
-					l 6
+					l 5; l 1
 				:l
 				l 1
 				m +1
-				l 9
+				l 5; l 4
 			:l
 			r 1
 			m +5
@@ -3616,19 +3616,19 @@ l:
 				m -1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 			:l
 			r 4
 			m +1
 			l 5
 			l:
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 			l:
 				r 5
 				l:
@@ -3646,18 +3646,18 @@ l:
 					r 2
 					l:
 						m -1
-						l 7
+						l 5; l 2
 						m +1
-						r 7
+						r 5; r 2
 					:l
-					l 7
+					l 5; l 2
 					l:
 						m -1
-						r 7
+						r 5; r 2
 						m +1
-						l 16
+						l 5; l 5; l 5; l 1
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 4
 						l:
@@ -3666,7 +3666,7 @@ l:
 						m +1
 						r 5
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						m +1
@@ -3675,18 +3675,18 @@ l:
 
 				:l
 				m +1
-				r 7
+				r 5; r 2
 				l:
 					m -1
-					l 7
+					l 5; l 2
 					m -1
-					r 7
+					r 5; r 2
 				:l
 				m +1
-				l 7
+				l 5; l 2
 				l:
 					m -1
-					r 7
+					r 5; r 2
 					m -1
 					l 2
 					l:
@@ -3700,18 +3700,18 @@ l:
 						m -1
 						r 5
 						m +1
-						l 14
+						l 5; l 5; l 4
 						l:
-							l 9
+							l 5; l 4
 						:l
 						r 3
 						l:
 							m -1
 						:l
 						m +1
-						r 6
+						r 5; r 1
 						l:
-							r 9
+							r 5; r 4
 						:l
 						r 1
 						l:
@@ -3728,15 +3728,15 @@ l:
 					m -1
 					l 1
 					l:
-						r 9
+						r 5; r 4
 					:l
-					l 8
+					l 5; l 3
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 9
+			l 5; l 4
 			l:
-				l 9
+				l 5; l 4
 			:l
 			r 4
 			l:
@@ -3748,17 +3748,17 @@ l:
 				m -1
 				l:
 					m -1
-					r 9
+					r 5; r 4
 					m +1
-					l 9
+					l 5; l 4
 				:l
-				r 9
+				r 5; r 4
 			:l
 			r 4
 			m -1
 			l 5
 			l:
-				l 9
+				l 5; l 4
 			:l
 
 		:l
@@ -3766,97 +3766,97 @@ l:
 	:l
 	l 4
 	o 1
-	r 10
+	r 5; r 5
 	l:
-		r 6
+		r 5; r 1
 		l:
 			m -1
 		:l
 		r 3
 	:l
-	l 9
+	l 5; l 4
 	l:
-		l 9
+		l 5; l 4
 	:l
 	r 1
-	m +10
+	m +5; m +5
 	l:
 		m -1
 		l:
 			m -1
-			r 9
+			r 5; r 4
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 	:l
 	r 5
 	m +1
-	r 9
+	r 5; r 4
 	m +1
-	l 15
+	l 5; l 5; l 5
 	l:
-		l 9
+		l 5; l 4
 	:l
-	r 8
+	r 5; r 3
 	l:
 		m -1
-		l 8
+		l 5; l 3
 		m +1
-		r 8
+		r 5; r 3
 	:l
-	l 8
+	l 5; l 3
 	l:
 		m -1
-		r 8
+		r 5; r 3
 		m +1
 		l:
 			m -1
 		:l
 		r 1
 		l:
-			r 9
+			r 5; r 4
 		:l
-		l 9
+		l 5; l 4
 		l:
-			r 8
+			r 5; r 3
 			l:
 				m -1
-				l 7
+				l 5; l 2
 				m +1
-				r 7
+				r 5; r 2
 			:l
-			l 7
+			l 5; l 2
 			l:
 				m -1
-				r 7
+				r 5; r 2
 				m +1
-				l 8
+				l 5; l 3
 				l:
-					l 9
+					l 5; l 4
 				:l
-				r 8
+				r 5; r 3
 				l:
 					m -1
 				:l
 				m +1
 				r 2
 			:l
-			l 10
+			l 5; l 5
 		:l
 
 	:l
-	r 8
+	r 5; r 3
 	l:
 		m -1
-		l 8
+		l 5; l 3
 		m +1
-		r 8
+		r 5; r 3
 	:l
-	l 8
+	l 5; l 3
 	l:
 		m -1
-		r 8
+		r 5; r 3
 		m +1
 		r 1
 		l:
@@ -3876,26 +3876,26 @@ l:
 				m +1
 				l 5
 			:l
-			r 8
+			r 5; r 3
 		:l
 		l 1
 		m +1
-		l 8
+		l 5; l 3
 		l:
-			r 6
+			r 5; r 1
 			l:
 				m -1
 				r 2
 				m +1
 				l 2
 			:l
-			l 15
+			l 5; l 5; l 5
 		:l
-		r 9
+		r 5; r 4
 		l:
-			r 9
+			r 5; r 4
 		:l
-		l 9
+		l 5; l 4
 		l:
 			r 1
 			l:
@@ -3903,10 +3903,10 @@ l:
 			:l
 			l 1
 			m -1
-			r 8
+			r 5; r 3
 			l:
 				m -1
-				l 8
+				l 5; l 3
 				m +1
 				r 1
 				l:
@@ -3925,20 +3925,20 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 7
+			l 5; l 2
 			l:
 				m -1
-				r 7
+				r 5; r 2
 				m +1
-				l 7
+				l 5; l 2
 			:l
 			l 1
 			m +1
-			l 9
+			l 5; l 4
 		:l
-		r 8
+		r 5; r 3
 		m -1
 		l 5
 		l:
@@ -3948,22 +3948,22 @@ l:
 		l 3
 	:l
 	m +1
-	r 8
+	r 5; r 3
 	l:
 		m -1
-		l 8
+		l 5; l 3
 		m -1
-		r 8
+		r 5; r 3
 	:l
 	m +1
-	l 8
+	l 5; l 3
 	l:
 		m -1
-		r 8
+		r 5; r 3
 		m -1
 		r 1
 		l:
-			r 6
+			r 5; r 1
 			l:
 				m -1
 				r 2
@@ -3972,7 +3972,7 @@ l:
 			:l
 			r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
 			r 1
 			l:
@@ -3980,10 +3980,10 @@ l:
 			:l
 			l 1
 			m -1
-			r 8
+			r 5; r 3
 			l:
 				m -1
-				l 8
+				l 5; l 3
 				m +1
 				r 1
 				l:
@@ -4002,18 +4002,18 @@ l:
 					m +1
 					l 1
 				:l
-				r 8
+				r 5; r 3
 			:l
-			l 7
+			l 5; l 2
 			l:
 				m -1
-				r 7
+				r 5; r 2
 				m +1
-				l 7
+				l 5; l 2
 			:l
 			l 1
 			m +1
-			l 9
+			l 5; l 4
 		:l
 		r 1
 		m +5
@@ -4021,51 +4021,51 @@ l:
 			m -1
 			l:
 				m -1
-				r 9
+				r 5; r 4
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 		:l
 		r 5
 		m +1
-		r 25
+		r 5; r 5; r 5; r 5; r 5
 		r 2
 		m +1
-		l 6
+		l 5; l 1
 		l:
-			l 9
+			l 5; l 4
 		:l
-		r 9
+		r 5; r 4
 		l:
-			r 6
+			r 5; r 1
 			l:
 				m -1
-				l 6
+				l 5; l 1
 				m -1
-				r 6
+				r 5; r 1
 			:l
 			m +1
-			l 6
+			l 5; l 1
 			l:
 				m -1
-				r 6
+				r 5; r 1
 				m -1
 				r 2
 				l:
 					m -1
-					l 8
+					l 5; l 3
 					m +1
-					r 8
+					r 5; r 3
 				:l
-				l 8
+				l 5; l 3
 				l:
 					m -1
-					r 8
+					r 5; r 3
 					m +1
-					l 17
+					l 5; l 5; l 5; l 2
 					l:
-						l 9
+						l 5; l 4
 					:l
 					r 4
 					l:
@@ -4074,7 +4074,7 @@ l:
 					m +1
 					r 5
 					l:
-						r 9
+						r 5; r 4
 					:l
 					r 1
 					m +1
@@ -4083,43 +4083,43 @@ l:
 
 			:l
 			m +1
-			r 8
+			r 5; r 3
 			l:
 				m -1
-				l 8
+				l 5; l 3
 				m -1
-				r 8
+				r 5; r 3
 			:l
 			m +1
-			l 8
+			l 5; l 3
 			l:
 				m -1
-				r 8
+				r 5; r 3
 				m -1
 				l 2
 				l:
 					m -1
-					l 6
+					l 5; l 1
 					m +1
-					r 6
+					r 5; r 1
 				:l
-				l 6
+				l 5; l 1
 				l:
 					m -1
-					r 6
+					r 5; r 1
 					m +1
-					l 15
+					l 5; l 5; l 5
 					l:
-						l 9
+						l 5; l 4
 					:l
 					r 3
 					l:
 						m -1
 					:l
 					m +1
-					r 6
+					r 5; r 1
 					l:
-						r 9
+						r 5; r 4
 					:l
 					r 1
 					l:
@@ -4136,15 +4136,15 @@ l:
 				m -1
 				l 1
 				l:
-					r 9
+					r 5; r 4
 				:l
-				l 8
+				l 5; l 3
 			:l
-			r 8
+			r 5; r 3
 		:l
-		l 9
+		l 5; l 4
 		l:
-			l 9
+			l 5; l 4
 		:l
 		r 4
 		l:
@@ -4156,20 +4156,20 @@ l:
 			m -1
 			l:
 				m -1
-				r 9
+				r 5; r 4
 				m +1
-				l 9
+				l 5; l 4
 			:l
-			r 9
+			r 5; r 4
 		:l
 		r 5
 		m -1
-		r 25
+		r 5; r 5; r 5; r 5; r 5
 		r 2
 		m -1
-		l 6
+		l 5; l 1
 		l:
-			l 9
+			l 5; l 4
 		:l
 
 	:l

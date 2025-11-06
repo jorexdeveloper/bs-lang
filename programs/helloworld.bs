@@ -4,7 +4,7 @@
 # Author    : Jore
 # Purpose   : Print Hello World
 
-m +8
+m +5; m +3
 l:
 	r 1
 	m +4
@@ -39,7 +39,7 @@ o 1
 r 1
 m -3
 o 1
-m +7
+m +5; m +2
 o 2
 m +3
 o 1
@@ -52,9 +52,9 @@ l 1
 o 1
 m +3
 o 1
-m -6
+m -5; m -1
 o 1
-m -8
+m -5; m -3
 o 1
 r 2
 m +1
